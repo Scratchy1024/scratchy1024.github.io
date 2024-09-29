@@ -10,11 +10,22 @@
     color: #333;
     background-image: url("background.png");
     background-repeat:repeat;
-
+    }
+    .button {
+    border: none;
+    padding: 0px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
     }
     </style>
 <html>
-    <h3 id="mutatedpubliceventsupdate">Mutated Public Events Update</h3>
+  <button type="button" class="button collapsible">
+	<h3 id="mutatedpubliceventsupdate">Mutated Public Events Update</h3>
+  </button>
+    <div class="content" style="display: none">
     <p>We’re making a change to the Mutated Public Events playlist by adding five public events each with two mutations to the playlist.  </p>
     <p>These events are:  </p>
     <ul>
@@ -25,8 +36,13 @@
     <li>Safe and Sound: Swift-Focused and Danger Cloud Mutations  </li>
     </ul>
     <p>During the PTS, these events will be on rotation so that you can provide us feedback on all these events.  </p>
+    </div>
     <hr>
-    <h3 id="perksupdate">Perks Update</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="perksupdate">Perks Update</h3>
+	</button>
+	<div class="content" style="display: none">
     <p>During Milepost Zero PTS testing and release, we made some focused changes to Vaccinated, Iron Stomach, Thirst Quencher, and Natural Resistance perks to make these generally underperforming cards more interesting and easier to incorporate into your builds. We did this by removing the extra ranks, lowering the cards cost, and changing the card’s effect to scale with the related primary stat.  </p>
     <p>In today’s PTS update, we’re continuing this process by modifying more Perk cards with the same design goals in mind. This batch of changes primarily focuses on Endurance cards, but you’ll also see some changes to a few cards in the other stat categories.  </p>
     <ul>
@@ -41,18 +57,18 @@
     <ul><p>Ranks reduced from 3 to 1 </p></ul>
     <ul><p>Moved from CHA to END </p></ul>
     <ul><p>Rank 1 gains the effects of the former Rank 3 </p></ul>
-    <ul><p>Heaulng bonus increased from 150% to 200% </p></ul>
+    <ul><p>Healing bonus increased from 150% to 200% </p></ul>
     <ul><p><strong>Additional effect</strong>: Benefits now also apply to Cannibal </p></ul>
     <li><p>Cannibal </p></li>
     <ul><p>Ranks reduced from 3 to 1 </p></ul>
-    <ul><p>Increased the heaulng received and hunger restored at Rank 1 </p></ul>
+    <ul><p>Increased the healing received and hunger restored at Rank 1 </p></ul>
     <li><p>Cap Collector </p></li>
     <ul><p>Ranks reduced from 3 to 1 </p></ul>
-    <ul><p>Now appules to all containers, not just Cap Stashes </p></ul>
+    <ul><p>Now applies to all containers, not just Cap Stashes </p></ul>
     <ul><p><strong>New effect</strong>: The amount of Caps found scales with LCK </p></ul>
     <li><p>First Aid </p></li>
     <ul><p>Ranks reduced from 3 to 1</p></ul>
-    <ul><p><strong>New effect</strong>: Stimpak heaulng scales with INT </p></ul>
+    <ul><p><strong>New effect</strong>: Stimpak healing scales with INT </p></ul>
     <li><p>Four Leaf Clover </p></li>
     <ul><p>Ranks reduced from 3 to 1 </p></ul>
     <ul><p><strong>New effect</strong>: Misses in VATS contribute to the Critical Meter based on LCK </p></ul>
@@ -75,7 +91,7 @@
     <ul><p>Ranks reduced from 3 to 2 </p></ul>
     <li><p>Ricochet </p></li>
     <ul><p>Ranks reduced from 3 to 1 </p></ul>
-    <ul><p><strong>New effect</strong>: Now increases Deflect chance based on LCK. Deflect grants a chance to reflect 100% of the damage of ranged attacks back to the attacker and reduces the damage you take from the attack by 50%. Deflect chance receives a bonus while wearing Heavy Armor or Power Armor (+50% multipuler). While in Power Armor, the amount of damage reflected is doubled (200%). </p></ul>
+    <ul><p><strong>New effect</strong>: Now increases Deflect chance based on LCK. Deflect grants a chance to reflect 100% of the damage of ranged attacks back to the attacker and reduces the damage you take from the attack by 50%. Deflect chance receives a bonus while wearing Heavy Armor or Power Armor (+50% multiplier). While in Power Armor, the amount of damage reflected is doubled (200%). </p></ul>
     <li><p>Bullet Shield </p></li>
     <ul><p>Moved from STR to END </p></ul>
     <ul><p>Added a 4th rank. </p></ul>
@@ -94,7 +110,11 @@
     <ul><p>Moved from AGI to END </p></ul>
     </ul>
     <h2 id="combatbalance">Combat Balance</h2>
-    <h3 id="adjustmentstoexplosionvfx">Adjustments to Explosion VFX</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="adjustmentstoexplosionvfx">Adjustments to Explosion VFX</h3>
+	</button>
+	<div class="content" style="display: none">
     <p>We’ve reduced the radius in which screen flash effects appear for a multitude of explosions throughout the game.  This is purely a visual change and does not impact the radius in which damage is dealt except in the couple of cases noted below. </p>
     <p>A few of these have had sizeable reductions (especially Fatman and Fatman MIRV explosions).  Please be sure to provide feedback on whether these changes are sufficient in reducing unwanted screen flashing, if there’s any additional explosions that we should adjust, or if some explosions no-longer feel impactful and satisfying to use. </p>
     <p><strong>Player Weapons</strong> </p>
@@ -151,7 +171,11 @@
     <li>Vertibird Death Explosion </li>
     <li>Vertibot Death Explosion</li>
     </ul>
-    <h3 id="weapons">Weapons</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="weapons">Weapons</h3>
+	</button>
+	<div class="content" style="display: none">
     <p>We have made changes to Damage and AP Costs for many weapons which primarily focuses on improving cases where weapons don’t perform well enough to meet players’ expectations. </p>
     <h4 id="damagebuffs">Damage Buffs</h4>
     <p>These values represent the weapon at its maximum level (45 or 50, depending on the weapon).  Lower-level values have similar increases in damage. </p>
@@ -203,7 +227,11 @@
     <li>Reduced DoT damage </li>
     </ul>
     <p><strong>Dev Note</strong>: While these weapons are still being evaluated for overall balance, these particular mods over-shot the current target for fire damage mods (especially when taking into account the recent adjustments to creature health and resistances) and are being brought in line with similar mods for other weapons. This allows for more consistency among weapons and mods when making future changes. </p>
-    <h3 id="apcostreductions">AP Cost Reductions</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="apcostreductions">AP Cost Reductions</h3>
+	</button>
+	<div class="content" style="display: none">
     <p>AP costs for the following weapons have been reduced: </p>
     <ul>
     <li>10mm SMG: 28 -&gt; 14 </li>
@@ -229,7 +257,11 @@
     <li>Plasma Caster: 30 -&gt; 18 </li>
     <li>Ultracite Gatling Laser: 30 -&gt; 10 </li>
     </ul>
-    <h3 id="mutations">Mutations</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="mutations">Mutations</h3>
+	</button>
+	<div class="content" style="display: none">
     <ul>
     <li>Addressed an issue where the Eagle Eyes mutation would gain twice the intended benefit from the Strange in Numbers perk. </li>
     <li>Dev Note: The effect of this mutation was originally reduced in an earlier update, but the effect of the Mutation with the Strange in Numbers version perk had not been updated at that time.  This change brings Eagle Eyes in line with expectations for how Strange in Numbers affects mutations. </li>
@@ -245,7 +277,11 @@
     <li>Addressed an issue where the Twisted Muscles mutation had a much lower than intended chance to cripple enemies. </li>
     <li>Addressed an issue where the Twisted Muscles mutation had no effect for Unarmed weapons. </li>
     </ul>
-    <h3 id="creatures">Creatures</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="creatures">Creatures</h3>
+	</button>
+	<div class="content" style="display: none">
     <p>These enemies previously shared weapons with players and now use enemy-specific variants of those weapons.  As a result, these weapons can no-longer be looted after those enemies are killed.  To make up for the loss of these items, we’ll be making adjustments to creature loot and scrap-to-learn chance for non-legendary mods in a later update during this PTS. </p>
     <p>The types of health, damage, and resistance adjustments mentioned in the creatures below have also been applied to other creatures as part of earlier updates. We’ve included additional information here to help provide a better understanding of the changes being made. </p>
     <p>Balance adjustments have been made for the following creatures: </p>
@@ -307,7 +343,11 @@
     <p>Backwoodsman 6 and Live and Love 3 far exceeded the intended level of benefit for magazines and have been adjusted to match their original effect of boosting Healing from food items. Backwoodsman 6’s prior change in the Once in a Blue Moon update had been made in error, and we apologize for the confusion. </p>
     <p>Prior to this update, these magazines boosted all foods effects, including (but not limited) to Carry Weight, S.P.E.C.I.A.L. stats, VATS Critical Attack damage, etc. </p>
     <p>The effects of these magazines will be further adjusted if needed in future updates. </p>
-    <h3 id="bugfixesmiscellaneousadjustments">Bugfixes &amp; Miscellaneous Adjustments</h3>
+    </div>
+<button type="button" class="button collapsible">
+		<h3 id="bugfixesmiscellaneousadjustments">Bugfixes &amp; Miscellaneous Adjustments</h3>
+	</button>
+	<div class="content" style="display: none">
     <ul>
     <li>Addressed an issue where Super Mutant Suiciders wouldn't drop mini-nukes.  They now have a small chance to drop a mini-nuke when killed without exploding. </li>
     <li>Addressed an issue where the Health and Resistances for the Scorchbeast Queen, Ultracite Titan, and Wendigo Colossus/Earle weren’t using updated values. </li>
@@ -434,6 +474,24 @@
     <li>Fast Travel Countdown Cancel – Now allows a single button command to cancel the fast travel instead of clicking both the left and right analog sticks. </li>
     <li>Social Menu – Allows a single button command to enter the Social Menu instead of having to hold CTRL-TAB on PC. </li>
     </ul>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+
 </html>
 
 
