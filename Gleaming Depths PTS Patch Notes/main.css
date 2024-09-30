@@ -5,6 +5,19 @@ strong,h2,h3,h4 {
   }
   h1 {
     margin: 0;
+    font-size: 2em
+  }
+  h2{
+    font-size: 1.5em
+  }
+  h3{
+    font-size: 1.17em;
+  }
+  h4{
+    font-size: 16px
+  }
+  h5{
+    font-size: .83em
   }
   .title {
     padding: 20px 20px;
@@ -28,12 +41,6 @@ strong,h2,h3,h4 {
     background-repeat: repeat;
     overflow-y: scroll;
   }
-  @media screen and (min-width: 1000px) {
-    body {
-      max-width: 50%;
-      margin: auto;
-    }
-  }
   .button {
     border: none;
     padding: 0px 32px;
@@ -43,4 +50,9 @@ strong,h2,h3,h4 {
     cursor: pointer;
     width: 100%;
   }
-  
+  @media screen and (min-width: 1000px) {
+    body {
+      max-width: 50%;
+      margin: auto;
+    }
+  }
