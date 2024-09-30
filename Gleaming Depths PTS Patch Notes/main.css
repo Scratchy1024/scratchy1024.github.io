@@ -24,7 +24,7 @@ strong,h2,h3,h4 {
     background-image: url("background.png");
     background-repeat: repeat;
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     body {
       max-width: 50%;
       margin: auto;
