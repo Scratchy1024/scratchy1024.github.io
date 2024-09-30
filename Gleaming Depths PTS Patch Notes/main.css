@@ -1,23 +1,26 @@
-strong,h2,h3,h4 {
+strong,
+h2,
+h3,
+h4 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   color: #333;
 }
 h1 {
   margin: 0;
-  font-size: 2em
+  font-size: 2em;
 }
-h2{
-  font-size: 1.5em
+h2 {
+  font-size: 1.5em;
 }
-h3{
+h3 {
   font-size: 1.17em;
 }
-h4{
-  font-size: 16px
+h4 {
+  font-size: 16px;
 }
-h5{
-  font-size: .83em
+h5 {
+  font-size: 0.83em;
 }
 .title {
   padding: 20px 20px;
@@ -30,11 +33,15 @@ h5{
   background-repeat: repeat;
 }
 .content {
-   padding: 0px 20px;
-   transition: max-height 0.2s ease-out;
-   max-height: 0;
-   overflow: hidden;
-   transition: max-height 0.2s ease-out;
+  padding: 0px 20px;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.triangle{
+  padding-right: 8px;
+  width: .5em;
 }
 body {
   font-family: schoolbook-web, serif;
@@ -45,15 +52,17 @@ body {
 }
 .button {
   border: none;
-  padding: 0px 32px;
+  padding: 0px 32px 0px 10px;
   margin: 5px 0px;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .footer {
-  padding: 5px 5px 5px 20px;
+  padding: 20px 20px;
   background-color: black;
   font-family: futura-pt, sans-serif;
   font-weight: 700;
@@ -71,11 +80,11 @@ body {
     margin: auto;
   }
 }
-#invite{
-  display:inline-block;
+#invite {
+  display: inline-block;
 }
-#logo{
-  width:5em;
-  height:5em;
-  margin-left:auto;
+#logo {
+  width: 3em;
+  height: 3em;
+  margin-left: auto;
 }
