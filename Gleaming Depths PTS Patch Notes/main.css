@@ -16,7 +16,10 @@ strong,h2,h3,h4 {
   }
   .content {
      padding: 0px 20px;
-     display: none;
+     transition: max-height 0.2s ease-out;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
   }
   body {
     font-family: schoolbook-web, serif;
