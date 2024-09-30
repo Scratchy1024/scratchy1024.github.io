@@ -26,6 +26,8 @@ strong,h2,h3,h4 {
     font-weight: 700;
     color: white;
     margin: 0;
+    background-image: url("background.png");
+    background-repeat: repeat;
   }
   .content {
      padding: 0px 20px;
