@@ -1,574 +1,417 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="main.css">
-<script src="index.js" type="text/javascript"></script>
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-</script>
+<style>
+    strong, h2, h3, h4 {
+      font-family: futura-pt, sans-serif;
+      font-weight: 700;
+      color: #333;
+    }
+    body {
+    font-family: schoolbook-web, serif;
+    color: #333;
+    background-image: url("background.png");
+    background-repeat:repeat;
+
+    }
+    </style>
 <html>
-<div class="main">
-  <div class="title"><h1>Annotated Gleaming Depths PTS Patch Notes</h1></div>
-  <button type="button" class="button collapsible">
+  <button type="button" class="collapsible">
     <h3 id="mutatedpubliceventsupdate">Mutated Public Events Update</h3>
   </button>
-  <div class="content" style="display: none">
-    <p>We’re making a change to the Mutated Public Events playlist by adding five public events each with two mutations to the playlist. </p>
-    <p>These events are: </p>
+    <div class="content">
+    <p>We’re making a change to the Mutated Public Events playlist by adding five public events each with two mutations to the playlist.  </p>
+    <p>These events are:  </p>
     <ul>
-      <li>Campfire Tales: Volatile and Toxic Blood Mutations </li>
-      <li>Free Range: Resilient and Swift-Footed Mutations </li>
-      <li>Project Paradise: Active Camouflage and Resilient Mutations </li>
-      <li>Beasts of Burden: Freezing Touch and Reflective Mutations </li>
-      <li>Safe and Sound: Swift-Focused and Danger Cloud Mutations </li>
+    <li>Campfire Tales: Volatile and Toxic Blood Mutations </li>
+    <li>Free Range: Resilient and Swift-Footed Mutations </li>
+    <li>Project Paradise: Active Camouflage and Resilient Mutations </li>
+    <li>Beasts of Burden: Freezing Touch and Reflective Mutations </li>
+    <li>Safe and Sound: Swift-Focused and Danger Cloud Mutations  </li>
     </ul>
-    <p>During the PTS, these events will be on rotation so that you can provide us feedback on all these events. </p>
-  </div>
-  <button type="button" class="button collapsible">
+    <p>During the PTS, these events will be on rotation so that you can provide us feedback on all these events.  </p>
+    <hr>
     <h3 id="perksupdate">Perks Update</h3>
-  </button>
-  <div class="content" style="display: none">
-    <p>During Milepost Zero PTS testing and release, we made some focused changes to Vaccinated, Iron Stomach, Thirst Quencher, and Natural Resistance perks to make these generally underperforming cards more interesting and easier to incorporate into your builds. We did this by removing the extra ranks, lowering the cards cost, and changing the card’s effect to scale with the related primary stat. </p>
-    <p>In today’s PTS update, we’re continuing this process by modifying more Perk cards with the same design goals in mind. This batch of changes primarily focuses on Endurance cards, but you’ll also see some changes to a few cards in the other stat categories. </p>
+    <p>During Milepost Zero PTS testing and release, we made some focused changes to Vaccinated, Iron Stomach, Thirst Quencher, and Natural Resistance perks to make these generally underperforming cards more interesting and easier to incorporate into your builds. We did this by removing the extra ranks, lowering the cards cost, and changing the card’s effect to scale with the related primary stat.  </p>
+    <p>In today’s PTS update, we’re continuing this process by modifying more Perk cards with the same design goals in mind. This batch of changes primarily focuses on Endurance cards, but you’ll also see some changes to a few cards in the other stat categories.  </p>
     <ul>
-      <li>
-        <p>Adamantium Skeleton </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Limb Damage Reduction effect now scales with END </p>
-      </ul>
-      <li>
-        <p>All Night Long </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Rank 1 Perk Point cost increased from 1 to 2 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: The positive effects of pre-war alcohol last twice as long </p>
-      </ul>
-      <li>
-        <p>Bloodsucker </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Moved from CHA to END </p>
-      </ul>
-      <ul>
-        <p>Rank 1 gains the effects of the former Rank 3 </p>
-      </ul>
-      <ul>
-        <p>Healing bonus increased from 150% to 200% </p>
-      </ul>
-      <ul>
-        <p><strong>Additional effect</strong>: Benefits now also apply to Cannibal </p>
-      </ul>
-      <li>
-        <p>Cannibal </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Increased the healing received and hunger restored at Rank 1 </p>
-      </ul>
-      <li>
-        <p>Cap Collector </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Now applies to all containers, not just Cap Stashes </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: The amount of Caps found scales with LCK </p>
-      </ul>
-      <li>
-        <p>First Aid </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1</p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Stimpak healing scales with INT </p>
-      </ul>
-      <li>
-        <p>Four Leaf Clover </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Misses in VATS contribute to the Critical Meter based on LCK </p>
-      </ul>
-      <li>
-        <p>Hard Bargain </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Rank 1 now grants +7 CHA while bartering with NPCs </p>
-      </ul>
-      <li>
-        <p>Junk Shield </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p>Now works while in Power Armor </p>
-      </ul>
-      <ul>
-        <p><strong>Additional effect</strong>: Now also scales with LCK </p>
-      </ul>
-      <li>
-        <p>Lifegiver </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Improves HP gained from END </p>
-      </ul>
-      <li>
-        <p>Lone Wanderer </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: AP Regen and defense bonus based on CHA </p>
-      </ul>
-      <li>
-        <p>Night Eyes </p>
-      </li>
-      <ul>
-        <p>Removed requirement for the time of day </p>
-      </ul>
-      <li>
-        <p>Professional Drinker </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 2 </p>
-      </ul>
-      <li>
-        <p>Ricochet </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Now increases Deflect chance based on LCK. Deflect grants a chance to reflect 100% of the damage of ranged attacks back to the attacker and reduces the damage you take from the attack by 50%. Deflect chance receives a bonus while wearing Heavy Armor or Power Armor (+50% multiplier). While in Power Armor, the amount of damage reflected is doubled (200%). </p>
-      </ul>
-      <li>
-        <p>Bullet Shield </p>
-      </li>
-      <ul>
-        <p>Moved from STR to END </p>
-      </ul>
-      <ul>
-        <p>Added a 4th rank. </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: 5% chance per rank to Deflect ranged attacks for 6 seconds when firing a heavy weapon. </p>
-      </ul>
-      <li>
-        <p>Serendipity </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New effect</strong>: Now increases Evade Chance while under 30% ulfe, based on LCK. Evade provides a chance to avoid all incoming damage from direct attacks. Evade can happen once every 2 seconds and cannot happen when over encumbered or while in Power Armor. </p>
-      </ul>
-      <li>
-        <p>Evasive </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 3 to 1 </p>
-      </ul>
-      <ul>
-        <p><strong>New Effect</strong>: Now increases Evade Chance based on AGI. </p>
-      </ul>
-      <li>
-        <p>Starched Genes </p>
-      </li>
-      <ul>
-        <p>Ranks reduced from 2 to 1 </p>
-      </ul>
-      <ul>
-        <p>Moved from LCK to END </p>
-      </ul>
-      <ul>
-        <p>Rank 1 now provides the benefits of the former Rank 2 </p>
-      </ul>
-      <li>
-        <p>Thru-Hiker </p>
-      </li>
-      <ul>
-        <p>Moved from AGI to END </p>
-      </ul>
+    <li><p>Adamantium Skeleton </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: Limb Damage Reduction effect now scales with END </p></ul>
+    <li><p>All Night Long </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Rank 1 Perk Point cost increased from 1 to 2 </p></ul>
+    <ul><p><strong>New effect</strong>: The positive effects of pre-war alcohol last twice as long </p></ul>
+    <li><p>Bloodsucker </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Moved from CHA to END </p></ul>
+    <ul><p>Rank 1 gains the effects of the former Rank 3 </p></ul>
+    <ul><p>Healing bonus increased from 150% to 200% </p></ul>
+    <ul><p><strong>Additional effect</strong>: Benefits now also apply to Cannibal </p></ul>
+    <li><p>Cannibal </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Increased the healing received and hunger restored at Rank 1 </p></ul>
+    <li><p>Cap Collector </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Now applies to all containers, not just Cap Stashes </p></ul>
+    <ul><p><strong>New effect</strong>: The amount of Caps found scales with LCK </p></ul>
+    <li><p>First Aid </p></li>
+    <ul><p>Ranks reduced from 3 to 1</p></ul>
+    <ul><p><strong>New effect</strong>: Stimpak healing scales with INT </p></ul>
+    <li><p>Four Leaf Clover </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: Misses in VATS contribute to the Critical Meter based on LCK </p></ul>
+    <li><p>Hard Bargain </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Rank 1 now grants +7 CHA while bartering with NPCs </p></ul>
+    <li><p>Junk Shield </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p>Now works while in Power Armor </p></ul>
+    <ul><p><strong>Additional effect</strong>: Now also scales with LCK </p></ul>
+    <li><p>Lifegiver </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: Improves HP gained from END </p></ul>
+    <li><p>Lone Wanderer </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: AP Regen and defense bonus based on CHA </p></ul>
+    <li><p>Night Eyes </p></li>
+    <ul><p>Removed requirement for the time of day </p></ul>
+    <li><p>Professional Drinker </p></li>
+    <ul><p>Ranks reduced from 3 to 2 </p></ul>
+    <li><p>Ricochet </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: Now increases Deflect chance based on LCK. Deflect grants a chance to reflect 100% of the damage of ranged attacks back to the attacker and reduces the damage you take from the attack by 50%. Deflect chance receives a bonus while wearing Heavy Armor or Power Armor (+50% multiplier). While in Power Armor, the amount of damage reflected is doubled (200%). </p></ul>
+    <li><p>Bullet Shield </p></li>
+    <ul><p>Moved from STR to END </p></ul>
+    <ul><p>Added a 4th rank. </p></ul>
+    <ul><p><strong>New effect</strong>: 5% chance per rank to Deflect ranged attacks for 6 seconds when firing a heavy weapon. </p></ul>
+    <li><p>Serendipity </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New effect</strong>: Now increases Evade Chance while under 30% ulfe, based on LCK. Evade provides a chance to avoid all incoming damage from direct attacks. Evade can happen once every 2 seconds and cannot happen when over encumbered or while in Power Armor. </p></ul>
+    <li><p>Evasive </p></li>
+    <ul><p>Ranks reduced from 3 to 1 </p></ul>
+    <ul><p><strong>New Effect</strong>: Now increases Evade Chance based on AGI. </p></ul>
+    <li><p>Starched Genes </p></li>
+    <ul><p>Ranks reduced from 2 to 1 </p></ul>
+    <ul><p>Moved from LCK to END </p></ul>
+    <ul><p>Rank 1 now provides the benefits of the former Rank 2 </p></ul>
+    <li><p>Thru-Hiker </p></li>
+    <ul><p>Moved from AGI to END </p></ul>
     </ul>
     <h2 id="combatbalance">Combat Balance</h2>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="adjustmentstoexplosionvfx">Adjustments to Explosion VFX</h3>
-  </button>
-  <div class="content" style="display: none">
-    <p>We’ve reduced the radius in which screen flash effects appear for a multitude of explosions throughout the game. This is purely a visual change and does not impact the radius in which damage is dealt except in the couple of cases noted below. </p>
-    <p>A few of these have had sizeable reductions (especially Fatman and Fatman MIRV explosions). Please be sure to provide feedback on whether these changes are sufficient in reducing unwanted screen flashing, if there’s any additional explosions that we should adjust, or if some explosions no-longer feel impactful and satisfying to use. </p>
+    <p>We’ve reduced the radius in which screen flash effects appear for a multitude of explosions throughout the game.  This is purely a visual change and does not impact the radius in which damage is dealt except in the couple of cases noted below. </p>
+    <p>A few of these have had sizeable reductions (especially Fatman and Fatman MIRV explosions).  Please be sure to provide feedback on whether these changes are sufficient in reducing unwanted screen flashing, if there’s any additional explosions that we should adjust, or if some explosions no-longer feel impactful and satisfying to use. </p>
     <p><strong>Player Weapons</strong> </p>
     <ul>
-      <li>Artillery Piece (Workshop) </li>
-      <li>Auto Grenade Launcher / M79 </li>
-      <li>Baseball Grenade </li>
-      <li>Broadsider </li>
-      <li>Bug Grenade </li>
-      <li>Cryo Arrow </li>
-      <li>Cryo Grenade </li>
-      <li>Cryo Mine </li>
-      <li>Explosions (all types) from weapons using the Explosive legendary mod </li>
-      <li>Fatman </li>
-      <li>Fatman MIRV (from individual projectiles) </li>
-      <li>Flaming Arrow </li>
-      <li>Floater Flamer Grenade </li>
-      <li>Floater Freezer Grenade </li>
-      <li>Frag Grenade </li>
-      <li>Grand Finale (Broadsider) </li>
-      <li>Hack and Slash (Legendary Perk) </li>
-      <li>Hellstorm Missile Launcher </li>
-      <li>Hellstorm Missile Launcher Cryo Payload </li>
-      <li>Hellstorm Missile Launcher Napalm Payload </li>
-      <li>Hellstorm Missile Launcher Plasma Payload </li>
-      <li>Missile Launcher </li>
-      <li>Missile Turret </li>
-      <li>Nuka Grenade </li>
-      <li>Also has a slight reduction to the damage radius to differentiate from Nuka Quantum Grenades. </li>
-      <li>Nuka Quantum Grenade </li>
-      <li>Also has a slight increase to the damage radius to differentiate from Nuka Grenades. </li>
-      <li><strong>Dev Note</strong>: Adjustments to the size of the explosion VFX to better match the radius in which the explosion deals damage will occur at a later date. </li>
-      <li>Orbital Strike Beacon </li>
-      <li>Plasma Grenade </li>
-      <li>Power Armor Explosive Vents </li>
-      <li>Pulse Grenade </li>
-      <li>Troglocide</li>
+    <li>Artillery Piece (Workshop) </li>
+    <li>Auto Grenade Launcher / M79 </li>
+    <li>Baseball Grenade </li>
+    <li>Broadsider </li>
+    <li>Bug Grenade </li>
+    <li>Cryo Arrow </li>
+    <li>Cryo Grenade </li>
+    <li>Cryo Mine </li>
+    <li>Explosions (all types) from weapons using the Explosive legendary mod </li>
+    <li>Fatman </li>
+    <li>Fatman MIRV (from individual projectiles) </li>
+    <li>Flaming Arrow </li>
+    <li>Floater Flamer Grenade </li>
+    <li>Floater Freezer Grenade </li>
+    <li>Frag Grenade </li>
+    <li>Grand Finale (Broadsider) </li>
+    <li>Hack and Slash (Legendary Perk) </li>
+    <li>Hellstorm Missile Launcher </li>
+    <li>Hellstorm Missile Launcher Cryo Payload </li>
+    <li>Hellstorm Missile Launcher Napalm Payload </li>
+    <li>Hellstorm Missile Launcher Plasma Payload </li>
+    <li>Missile Launcher </li>
+    <li>Missile Turret </li>
+    <li>Nuka Grenade </li>
+    <li>Also has a slight reduction to the damage radius to differentiate from Nuka Quantum Grenades. </li>
+    <li>Nuka Quantum Grenade </li>
+    <li>Also has a slight increase to the damage radius to differentiate from Nuka Grenades. </li>
+    <li><strong>Dev Note</strong>: Adjustments to the size of the explosion VFX to better match the radius in which the explosion deals damage will occur at a later date. </li>
+    <li>Orbital Strike Beacon </li>
+    <li>Plasma Grenade </li>
+    <li>Power Armor Explosive Vents </li>
+    <li>Pulse Grenade </li>
+    <li>Troglocide</li>
     </ul>
     <p><strong>NPC Weapons and Environmental Effects</strong></p>
     <p>NPCs’ use of player weapons listed above will also be affected. </p>
     <ul>
-      <li>Exploding Cars &amp; other Civilian Vehicles </li>
-      <li>Explosive Rounds from Turrets </li>
-      <li>Floater Freezer Death </li>
-      <li>Fusion Core Meltdown (Robots) </li>
-      <li>Gas Canisters </li>
-      <li>Invaders from Beyond UFO Missile Strikes </li>
-      <li>Mole Rat Landminer </li>
-      <li>Robot Death Explosion </li>
-      <li>Scorched Exterminator Plasma Launcher </li>
-      <li>Super Mutant Suicider Mini-Nuke </li>
-      <li>Turret Death Explosion </li>
-      <li>Various destructible objects such as machinery in Grafton Steel and The Foundry (The Pitt) </li>
-      <li>Vertibird Death Explosion </li>
-      <li>Vertibot Death Explosion</li>
+    <li>Exploding Cars &amp; other Civilian Vehicles </li>
+    <li>Explosive Rounds from Turrets </li>
+    <li>Floater Freezer Death </li>
+    <li>Fusion Core Meltdown (Robots) </li>
+    <li>Gas Canisters </li>
+    <li>Invaders from Beyond UFO Missile Strikes </li>
+    <li>Mole Rat Landminer </li>
+    <li>Robot Death Explosion </li>
+    <li>Scorched Exterminator Plasma Launcher </li>
+    <li>Super Mutant Suicider Mini-Nuke </li>
+    <li>Turret Death Explosion </li>
+    <li>Various destructible objects such as machinery in Grafton Steel and The Foundry (The Pitt) </li>
+    <li>Vertibird Death Explosion </li>
+    <li>Vertibot Death Explosion</li>
     </ul>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="weapons">Weapons</h3>
-  </button>
-  <div class="content" style="display: none">
     <p>We have made changes to Damage and AP Costs for many weapons which primarily focuses on improving cases where weapons don’t perform well enough to meet players’ expectations. </p>
     <h4 id="damagebuffs">Damage Buffs</h4>
-    <p>These values represent the weapon at its maximum level (45 or 50, depending on the weapon). Lower-level values have similar increases in damage. </p>
-    <p>This list represents an early pass on many non-automatic and single-shot weapons, including Shotguns, Revolvers, Rifles, and Bows. Please be sure to provide feedback on these changes as we intend to make follow-up adjustments as needed. </p>
+    <p>These values represent the weapon at its maximum level (45 or 50, depending on the weapon).  Lower-level values have similar increases in damage. </p>
+    <p>This list represents an early pass on many non-automatic and single-shot weapons, including Shotguns, Revolvers, Rifles, and Bows.  Please be sure to provide feedback on these changes as we intend to make follow-up adjustments as needed. </p>
     <p>Damage for the following weapons has been increased: </p>
     <ul>
-      <li>10mm Pistol: 28 -&gt; 31 </li>
-      <li>44 (Revolver): 60 -&gt; 72 </li>
-      <li>Black Powder Pistol: 176 -&gt; 216 </li>
-      <li>Black Powder Rifle: 180 -&gt; 217 </li>
-      <li>Bow: 90 -&gt; 95 </li>
-      <li>Cold Shoulder: 115/75 -&gt; 91/91 </li>
-      <li>Combat Shotgun: 90 -&gt; 97 </li>
-      <li>Compound Bow: 100 -&gt; 112 </li>
-      <li>Crossbow: 70 -&gt; 111 </li>
-      <li>Double Barrel Shotgun: 115 -&gt; 140 </li>
-      <li>Gauss Rifle: 140 -&gt; 146 </li>
-      <li>Gauss Shotgun: 140 -&gt; 187 </li>
-      <li><strong>Dev Note</strong>: We recognize that the initial update to the Gauss Shotgun (originally 105 -&gt; 140) was not sufficient in making up for damage lost with the earlier change to how explosions’ damage is calculated. We’ll continue to observe this weapon’s performance and will make further updates if needed to ensure that it meets expectations. </li>
-      <li>Harpoon Gun: 175 -&gt; 195 </li>
-      <li>Hunting Rifle: 70 -&gt; 100 </li>
-      <li>Lever Action Rifle: 75 -&gt; 88 </li>
-      <li>Pepper Shaker: 60 -&gt; 75 </li>
-      <li>Pipe Bolt-Action: 70 -&gt; 94 </li>
-      <li>Pipe Gun: 26 -&gt; 28 </li>
-      <li>Pipe Revolver 55 -&gt; 70 </li>
-      <li>Pump Action Shotgun 95 -&gt; 102 </li>
-      <li>Salvaged Assaultron Head: 50 -&gt; 62 </li>
-      <li>Single Action Revolver 62 -&gt; 82 </li>
-      <li>The Dragon: 225 -&gt; 255 </li>
-      <li>Western Revolver: 65 -&gt; 84 </li>
+    <li>10mm Pistol: 28 -&gt; 31 </li>
+    <li>44 (Revolver): 60 -&gt; 72 </li>
+    <li>Black Powder Pistol: 176 -&gt; 216 </li>
+    <li>Black Powder Rifle: 180 -&gt; 217 </li>
+    <li>Bow: 90 -&gt; 95 </li>
+    <li>Cold Shoulder: 115/75 -&gt; 91/91 </li>
+    <li>Combat Shotgun: 90 -&gt; 97 </li>
+    <li>Compound Bow: 100 -&gt; 112 </li>
+    <li>Crossbow: 70 -&gt; 111 </li>
+    <li>Double Barrel Shotgun: 115 -&gt; 140 </li>
+    <li>Gauss Rifle: 140 -&gt; 146 </li>
+    <li>Gauss Shotgun: 140 -&gt; 187 </li>
+    <li><strong>Dev Note</strong>: We recognize that the initial update to the Gauss Shotgun (originally 105 -&gt; 140) was not sufficient in making up for damage lost with the earlier change to how explosions’ damage is calculated.  We’ll continue to observe this weapon’s performance and will make further updates if needed to ensure that it meets expectations. </li>
+    <li>Harpoon Gun: 175 -&gt; 195 </li>
+    <li>Hunting Rifle: 70 -&gt; 100 </li>
+    <li>Lever Action Rifle: 75 -&gt; 88 </li>
+    <li>Pepper Shaker: 60 -&gt; 75 </li>
+    <li>Pipe Bolt-Action: 70 -&gt; 94 </li>
+    <li>Pipe Gun: 26 -&gt; 28 </li>
+    <li>Pipe Revolver 55 -&gt; 70 </li>
+    <li>Pump Action Shotgun 95 -&gt; 102 </li>
+    <li>Salvaged Assaultron Head: 50 -&gt; 62 </li>
+    <li>Single Action Revolver 62 -&gt; 82 </li>
+    <li>The Dragon: 225 -&gt; 255 </li>
+    <li>Western Revolver: 65 -&gt; 84 </li>
     </ul>
     <h4 id="weaponmodadjustments">Weapon Mod Adjustments</h4>
     <p>Adjusted the damage for the Beta Wave Tuner and Gamma Wave Emitter mods for the following weapons: </p>
     <ul>
-      <li>Laser Gun </li>
-      <li>Reduced DoT damage </li>
-      <li>Reduced fire damage </li>
-      <li>Ultracite Laser Gun </li>
-      <li>Reduced DoT damage </li>
-      <li>Reduced fire damage </li>
-      <li>Gatling Laser </li>
-      <li>Increased DoT damage </li>
-      <li>Reduced fire damage </li>
-      <li>Ultracite Gatling Laser </li>
-      <li>Reduced DoT damage at level 35 </li>
-      <li>Reduced fire damage </li>
-      <li>Plasma Gun </li>
-      <li>Reduced DoT damage </li>
+    <li>Laser Gun </li>
+    <li>Reduced DoT damage </li>
+    <li>Reduced fire damage </li>
+    <li>Ultracite Laser Gun </li>
+    <li>Reduced DoT damage </li>
+    <li>Reduced fire damage </li>
+    <li>Gatling Laser </li>
+    <li>Increased DoT damage </li>
+    <li>Reduced fire damage </li>
+    <li>Ultracite Gatling Laser </li>
+    <li>Reduced DoT damage at level 35 </li>
+    <li>Reduced fire damage </li>
+    <li>Plasma Gun </li>
+    <li>Reduced DoT damage </li>
     </ul>
     <p><strong>Dev Note</strong>: While these weapons are still being evaluated for overall balance, these particular mods over-shot the current target for fire damage mods (especially when taking into account the recent adjustments to creature health and resistances) and are being brought in line with similar mods for other weapons. This allows for more consistency among weapons and mods when making future changes. </p>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="apcostreductions">AP Cost Reductions</h3>
-  </button>
-  <div class="content" style="display: none">
     <p>AP costs for the following weapons have been reduced: </p>
     <ul>
-      <li>10mm SMG: 28 -&gt; 14 </li>
-      <li>Dev Note: The Anchorage Ace no-longer gains an additional AP cost benefit beyond the Reflex Sight’s 15% reduction. </li>
-      <li>.50 Cal Machine Gun: 30 -&gt; 12 </li>
-      <li>Auto Grenade Launcher: 30 -&gt; 18 </li>
-      <li>Broadsider: 40 -&gt; 18 </li>
-      <li>Cremator: 30 -&gt; 20 </li>
-      <li>Cryolator: 20 -&gt; 10 </li>
-      <li>Fat Man: 60-&gt; 40 </li>
-      <li>Flamer: 30 -&gt; 10 </li>
-      <li>Gatling Gun: 30 -&gt; 14 </li>
-      <li>Gatling Laser: 30 -&gt; 8 </li>
-      <li>Gatling Plasma: 30 -&gt; 14 </li>
-      <li>Gauss Minigun: 30 -&gt; 14 </li>
-      <li>Harpoon Gun: 40 -&gt; 18 </li>
-      <li>Hellstorm Missile Launcher: 45 -&gt; 20 </li>
-      <li>Light Machine Gun: 32 -&gt; 10 </li>
-      <li>M79 Grenade Launcher: 30 -&gt; 16 </li>
-      <li>Minigun: 30 -&gt; 8 </li>
-      <li>Missile Launcher: 45 -&gt; 25 </li>
-      <li>Pepper Shaker: 30 -&gt; 14 </li>
-      <li>Plasma Caster: 30 -&gt; 18 </li>
-      <li>Ultracite Gatling Laser: 30 -&gt; 10 </li>
+    <li>10mm SMG: 28 -&gt; 14 </li>
+    <li>Dev Note: The Anchorage Ace no-longer gains an additional AP cost benefit beyond the Reflex Sight’s 15% reduction. </li>
+    <li>.50 Cal Machine Gun: 30 -&gt; 12 </li>
+    <li>Auto Grenade Launcher: 30 -&gt; 18 </li>
+    <li>Broadsider: 40 -&gt; 18 </li>
+    <li>Cremator: 30 -&gt; 20 </li>
+    <li>Cryolator: 20 -&gt; 10 </li>
+    <li>Fat Man: 60-&gt; 40 </li>
+    <li>Flamer: 30 -&gt; 10 </li>
+    <li>Gatling Gun: 30 -&gt; 14 </li>
+    <li>Gatling Laser: 30 -&gt; 8 </li>
+    <li>Gatling Plasma: 30 -&gt; 14 </li>
+    <li>Gauss Minigun: 30 -&gt; 14 </li>
+    <li>Harpoon Gun: 40 -&gt; 18 </li>
+    <li>Hellstorm Missile Launcher: 45 -&gt; 20 </li>
+    <li>Light Machine Gun: 32 -&gt; 10 </li>
+    <li>M79 Grenade Launcher: 30 -&gt; 16 </li>
+    <li>Minigun: 30 -&gt; 8 </li>
+    <li>Missile Launcher: 45 -&gt; 25 </li>
+    <li>Pepper Shaker: 30 -&gt; 14 </li>
+    <li>Plasma Caster: 30 -&gt; 18 </li>
+    <li>Ultracite Gatling Laser: 30 -&gt; 10 </li>
     </ul>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="mutations">Mutations</h3>
-  </button>
-  <div class="content" style="display: none">
     <ul>
-      <li>Addressed an issue where the Eagle Eyes mutation would gain twice the intended benefit from the Strange in Numbers perk. </li>
-      <li>Dev Note: The effect of this mutation was originally reduced in an earlier update, but the effect of the Mutation with the Strange in Numbers version perk had not been updated at that time. This change brings Eagle Eyes in line with expectations for how Strange in Numbers affects mutations. </li>
-      <li>Addressed an issue where the increased hunger/thirst penalty of the Speed Demon mutation had no effect. </li>
-      <li>Addressed an issue where the effects of the Class Freak perk, the Speed Demon Serum's impact on negative mutation effects, and RadX's effect on suppressing the effects of Speed Demon were not properly represented in the Pip-Boy. </li>
-      <li>Addressed an issue where the Speed Demon mutation would also count as the Empath mutation for reducing damage dealt to teammates. </li>
-      <li>Dev Note: Alongside the other Empath bugs, this was causing a 33% reduction in all damage taken and a further 33% reduction to explosion damage taken while on a team – so long as a fellow teammate was using the Speed Demon mutation. </li>
-      <li>Addressed an issue where the Empath mutation's damage reduction for teammates was twice as effective as intended for explosion damage. </li>
-      <li>Addressed an issue the Empath mutation's increase to damage taken would cause twice as much additional explosion damage as expected. </li>
-      <li>Addressed an issue where the Empath mutation's increase to damage taken would be affected by the Strange in Numbers perk. </li>
-      <li>Addressed an issue where the Empath mutation had a stronger decrease to teammates' damage taken than expected - as if the Strange in Numbers perk was always active, regardless of whether the Empath user had Strange in Numbers equipped. </li>
-      <li>Addressed an issue where the Twisted Muscles mutation wasn't affected by the Strange In Numbers perk. </li>
-      <li>Addressed an issue where the Twisted Muscles mutation had a much lower than intended chance to cripple enemies. </li>
-      <li>Addressed an issue where the Twisted Muscles mutation had no effect for Unarmed weapons. </li>
+    <li>Addressed an issue where the Eagle Eyes mutation would gain twice the intended benefit from the Strange in Numbers perk. </li>
+    <li>Dev Note: The effect of this mutation was originally reduced in an earlier update, but the effect of the Mutation with the Strange in Numbers version perk had not been updated at that time.  This change brings Eagle Eyes in line with expectations for how Strange in Numbers affects mutations. </li>
+    <li>Addressed an issue where the increased hunger/thirst penalty of the Speed Demon mutation had no effect. </li>
+    <li>Addressed an issue where the effects of the Class Freak perk, the Speed Demon Serum's impact on negative mutation effects, and RadX's effect on suppressing the effects of Speed Demon were not properly represented in the Pip-Boy. </li>
+    <li>Addressed an issue where the Speed Demon mutation would also count as the Empath mutation for reducing damage dealt to teammates. </li>
+    <li>Dev Note: Alongside the other Empath bugs, this was causing a 33% reduction in all damage taken and a further 33% reduction to explosion damage taken while on a team – so long as a fellow teammate was using the Speed Demon mutation. </li>
+    <li>Addressed an issue where the Empath mutation's damage reduction for teammates was twice as effective as intended for explosion damage. </li>
+    <li>Addressed an issue the Empath mutation's increase to damage taken would cause twice as much additional explosion damage as expected. </li>
+    <li>Addressed an issue where the Empath mutation's increase to damage taken would be affected by the Strange in Numbers perk. </li>
+    <li>Addressed an issue where the Empath mutation had a stronger decrease to teammates' damage taken than expected - as if the Strange in Numbers perk was always active, regardless of whether the Empath user had Strange in Numbers equipped. </li>
+    <li>Addressed an issue where the Twisted Muscles mutation wasn't affected by the Strange In Numbers perk. </li>
+    <li>Addressed an issue where the Twisted Muscles mutation had a much lower than intended chance to cripple enemies. </li>
+    <li>Addressed an issue where the Twisted Muscles mutation had no effect for Unarmed weapons. </li>
     </ul>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="creatures">Creatures</h3>
-  </button>
-  <div class="content" style="display: none">
-    <p>These enemies previously shared weapons with players and now use enemy-specific variants of those weapons. As a result, these weapons can no-longer be looted after those enemies are killed. To make up for the loss of these items, we’ll be making adjustments to creature loot and scrap-to-learn chance for non-legendary mods in a later update during this PTS. </p>
+    <p>These enemies previously shared weapons with players and now use enemy-specific variants of those weapons.  As a result, these weapons can no-longer be looted after those enemies are killed.  To make up for the loss of these items, we’ll be making adjustments to creature loot and scrap-to-learn chance for non-legendary mods in a later update during this PTS. </p>
     <p>The types of health, damage, and resistance adjustments mentioned in the creatures below have also been applied to other creatures as part of earlier updates. We’ve included additional information here to help provide a better understanding of the changes being made. </p>
     <p>Balance adjustments have been made for the following creatures: </p>
     <ul>
-      <li>All creatures previously using player weapons (Blood Eagles, Cultists, Lost, Mole Miners, Raiders, Scorched, Super Mutants): </li>
-      <li>Weapon damage now scales to level 100. </li>
-      <li><strong>Dev Note</strong>: As these creatures previously used player weapons, their damage would only scale to level 45 or 50. </li>
-      <li>Thrown grenades now scale with level. </li>
-      <li><strong>Dev Note</strong>: This currently only applies to enemies using grenades. Damage from player grenades is unchanged. </li>
-      <li>Health, resistances, and damage now scale more smoothly from level 1 to level 100. </li>
-      <li><strong>Dev Note</strong>: These creatures will generally be less threatening at mid-level (especially 35-75) but should be a bit tougher towards level 100. In some cases at lower level, these creatures may be slightly weaker or stronger in order to ensure that they’re appropriately engaging even when first met. </li>
-      <li>Power Armor variants’ resistances now scale more appropriately at differing levels. </li>
-      <li><strong>Dev Note</strong>: These creatures previously would gain a flat bonus from Power Armor at all levels and thus could be unexpectedly tough at low-to-mid level. </li>
-      <li>Resistances differentiated between Blood Eagles, Cultists, and Raiders. </li>
-      <li>Now relies more on health as the primary driver of survivability rather than resistances. </li>
-      <li><strong>Dev Note</strong>: Resistances are being used to differentiate damage types rather than as a substitute for health. This has the side benefit of showing higher damage numbers when attacking these creatures which more closely match the weapons being used. </li>
-      <li>No-longer gains a variable amount of resistances based on randomized armor. </li>
-      <li>Floater Freezer </li>
-      <li>Slightly lowered the duration of the slow effect on the freezing breath attack. </li>
-      <li>Reduced the rate at which the slow effect accumulates for the freezing breath attack. </li>
-      <li>Reduced damage for the freezing breath attack. </li>
-      <li>Reduced the cryo damage for the blast/stare/shockwave attack (the one which also deals fusion core damage). </li>
-      <li>Floater Flamer </li>
-      <li>Reduced damage for the fire breath attack. </li>
-      <li>Floater gnasher </li>
-      <li>Reduced damage for the bite attack. </li>
-      <li>Alien Invader </li>
-      <li>Reduced health </li>
-      <li>Reduced damage in Daily Ops. </li>
-      <li>Lesser Devil </li>
-      <li>Increased damage. </li>
-      <li>Bloodbug </li>
-      <li>Reduced radiation damage at lower levels. </li>
+    <li>All creatures previously using player weapons (Blood Eagles, Cultists, Lost, Mole Miners, Raiders, Scorched, Super Mutants): </li>
+    <li>Weapon damage now scales to level 100. </li>
+    <li><strong>Dev Note</strong>: As these creatures previously used player weapons, their damage would only scale to level 45 or 50. </li>
+    <li>Thrown grenades now scale with level. </li>
+    <li><strong>Dev Note</strong>: This currently only applies to enemies using grenades.  Damage from player grenades is unchanged. </li>
+    <li>Health, resistances, and damage now scale more smoothly from level 1 to level 100. </li>
+    <li><strong>Dev Note</strong>: These creatures will generally be less threatening at mid-level (especially 35-75) but should be a bit tougher towards level 100.  In some cases at lower level, these creatures may be slightly weaker or stronger in order to ensure that they’re appropriately engaging even when first met. </li>
+    <li>Power Armor variants’ resistances now scale more appropriately at differing levels. </li>
+    <li><strong>Dev Note</strong>: These creatures previously would gain a flat bonus from Power Armor at all levels and thus could be unexpectedly tough at low-to-mid level. </li>
+    <li>Resistances differentiated between Blood Eagles, Cultists, and Raiders. </li>
+    <li>Now relies more on health as the primary driver of survivability rather than resistances. </li>
+    <li><strong>Dev Note</strong>: Resistances are being used to differentiate damage types rather than as a substitute for health.  This has the side benefit of showing higher damage numbers when attacking these creatures which more closely match the weapons being used. </li>
+    <li>No-longer gains a variable amount of resistances based on randomized armor. </li>
+    <li>Floater Freezer </li>
+    <li>Slightly lowered the duration of the slow effect on the freezing breath attack. </li>
+    <li>Reduced the rate at which the slow effect accumulates for the freezing breath attack. </li>
+    <li>Reduced damage for the freezing breath attack. </li>
+    <li>Reduced the cryo damage for the blast/stare/shockwave attack (the one which also deals fusion core damage). </li>
+    <li>Floater Flamer </li>
+    <li>Reduced damage for the fire breath attack. </li>
+    <li>Floater gnasher </li>
+    <li>Reduced damage for the bite attack. </li>
+    <li>Alien Invader </li>
+    <li>Reduced health </li>
+    <li>Reduced damage in Daily Ops. </li>
+    <li>Lesser Devil </li>
+    <li>Increased damage. </li>
+    <li>Bloodbug </li>
+    <li>Reduced radiation damage at lower levels. </li>
     </ul>
     <p>Magazines </p>
-    <p>The following Magazines have been updated. For the most part, these are direct increases to the Magazines’ effects. </p>
+    <p>The following Magazines have been updated.  For the most part, these are direct increases to the Magazines’ effects. </p>
     <ul>
-      <li>Astoundingly Awesome Tales 7: +25 max AP, up from +5. </li>
-      <li>Astoundingly Awesome Tales 10: +35% more damage with scoped weapons while aiming, previously +15% without needing to aim. </li>
-      <li><strong>Dev Note</strong>: This magazine now specifically offers its benefit to weapons fired using manual aim and does not affect VATS. </li>
-      <li>Backwoodsman 2: Name and cover art updated to match effect. </li>
-      <li><strong>Dev Note</strong>: This is a purely cosmetic change for the magazine’s name and cover. It was previously swapped with Backwoodsman 7 (see below). </li>
-      <li>Backwoodsman 6: Now only affects healing from cooked foods, rather than all effects from cooked food. </li>
-      <li>Backwoodsman 7 (name and cover art updated to match effect): Now affects all thrown weapons (Sheepsquatch Shard, Tomahawk, Throwing Knife, Meat Cleaver) instead of just Tomahawks. </li>
-      <li>Live and Love 1: +25 max HP while on a team, up from 10. </li>
-      <li>Live and Love 3: Now only affects healing from fruits &amp; veggies, rather than all effects from fruits &amp; veggies. </li>
-      <li>Live and Love 6: +25 damage resistance while on a team, up from 10. </li>
-      <li>Grognak the Barbarian 3: +25 poison resistance, up from 15. </li>
-      <li>Grognak the Barbarian 8: +25 cryo resistance (Charisma no-longer required), instead of +2 damage resistance per point of Charisma. </li>
-      <li>Grognak the Barbarian 9: +25 carry weight, up from +10. </li>
-      <li>Grognak the Barbarian 10: +25 energy resistance, up from +15. </li>
-      <li>Tesla Science 6: +75 radiation resistance, up from +15. </li>
-      <li>Guns and Bullets 6: +75 damage resistance at night, up from +10 damage resistance at night. </li>
-      <li>Now occurs slightly later at night to match Nocturnal and other night-time effects. </li>
-      <li>Scout's Life 3: Now reduces all items' weight by 10%, instead of +10 carry weight. </li>
-      <li>Scout's Life 9: Now provides +25 fire resistance, instead of -80% camp placement cost. </li>
-      <li>US Covert operations Manual 1: +50 damage resistance while sneaking, up from +10 while sneaking. </li>
+    <li>Astoundingly Awesome Tales 7: +25 max AP, up from +5. </li>
+    <li>Astoundingly Awesome Tales 10: +35% more damage with scoped weapons while aiming, previously +15% without needing to aim. </li>
+    <li><strong>Dev Note</strong>: This magazine now specifically offers its benefit to weapons fired using manual aim and does not affect VATS. </li>
+    <li>Backwoodsman 2: Name and cover art updated to match effect. </li>
+    <li><strong>Dev Note</strong>: This is a purely cosmetic change for the magazine’s name and cover.  It was previously swapped with Backwoodsman 7 (see below). </li>
+    <li>Backwoodsman 6: Now only affects healing from cooked foods, rather than all effects from cooked food. </li>
+    <li>Backwoodsman 7 (name and cover art updated to match effect): Now affects all thrown weapons (Sheepsquatch Shard, Tomahawk, Throwing Knife, Meat Cleaver) instead of just Tomahawks. </li>
+    <li>Live and Love 1: +25 max HP while on a team, up from 10. </li>
+    <li>Live and Love 3: Now only affects healing from fruits &amp; veggies, rather than all effects from fruits &amp; veggies. </li>
+    <li>Live and Love 6: +25 damage resistance while on a team, up from 10. </li>
+    <li>Grognak the Barbarian 3: +25 poison resistance, up from 15. </li>
+    <li>Grognak the Barbarian 8: +25 cryo resistance (Charisma no-longer required), instead of +2 damage resistance per point of Charisma. </li>
+    <li>Grognak the Barbarian 9: +25 carry weight, up from +10. </li>
+    <li>Grognak the Barbarian 10: +25 energy resistance, up from +15. </li>
+    <li>Tesla Science 6: +75 radiation resistance, up from +15. </li>
+    <li>Guns and Bullets 6: +75 damage resistance at night, up from +10 damage resistance at night. </li>
+    <li>Now occurs slightly later at night to match Nocturnal and other night-time effects. </li>
+    <li>Scout's Life 3: Now reduces all items' weight by 10%, instead of +10 carry weight. </li>
+    <li>Scout's Life 9: Now provides +25 fire resistance, instead of -80% camp placement cost. </li>
+    <li>US Covert operations Manual 1: +50 damage resistance while sneaking, up from +10 while sneaking. </li>
     </ul>
     <p>Backwoodsman 6 and Live and Love 3 far exceeded the intended level of benefit for magazines and have been adjusted to match their original effect of boosting Healing from food items. Backwoodsman 6’s prior change in the Once in a Blue Moon update had been made in error, and we apologize for the confusion. </p>
     <p>Prior to this update, these magazines boosted all foods effects, including (but not limited) to Carry Weight, S.P.E.C.I.A.L. stats, VATS Critical Attack damage, etc. </p>
     <p>The effects of these magazines will be further adjusted if needed in future updates. </p>
-  </div>
-  <button type="button" class="button collapsible">
     <h3 id="bugfixesmiscellaneousadjustments">Bugfixes &amp; Miscellaneous Adjustments</h3>
-  </button>
-  <div class="content" style="display: none">
     <ul>
-      <li>Addressed an issue where Super Mutant Suiciders wouldn't drop mini-nukes. They now have a small chance to drop a mini-nuke when killed without exploding. </li>
-      <li>Addressed an issue where the Health and Resistances for the Scorchbeast Queen, Ultracite Titan, and Wendigo Colossus/Earle weren’t using updated values. </li>
-      <li>Addressed an issue where Shotgun durability was much higher than expected as a result of an <a href="https://fallout.bethesda.net/en/article/4nMJ3QEIKoK16nZ0A8P7Ec/fallout-76-inventory-update-notes-january-26-2021">earlier change</a>. </li>
-      <li><strong>Dev Note</strong>: Shotguns previously would lose durability per-pellet instead of per-shot, and shotgun durability had not yet been updated to match the much-lower durability impact after the change. Please be sure to provide feedback on this change, especially if you feel that Shotguns no-longer have durability that’s comparable to other weapons. </li>
-      <li>Addressed an issue where NPCs using Laser Rifles can occasionally deal unexpectedly high damage. </li>
-      <li><strong>Dev Note</strong>: This occurred when those NPCs were using Laser Rifles with Sniper barrels which will charge over time when not being fired in order to deal more damage on the next shot. These mods have been removed from NPC-specific Laser Rifles. </li>
-      <li>Addressed an issue where Tormentor perk had no effect for automatic weapons. </li>
-      <li>Addressed an issue where weapons other than Shotguns could be affected by the Enforcer perk in specific circumstances. </li>
+    <li>Addressed an issue where Super Mutant Suiciders wouldn't drop mini-nukes.  They now have a small chance to drop a mini-nuke when killed without exploding. </li>
+    <li>Addressed an issue where the Health and Resistances for the Scorchbeast Queen, Ultracite Titan, and Wendigo Colossus/Earle weren’t using updated values. </li>
+    <li>Addressed an issue where Shotgun durability was much higher than expected as a result of an <a href="https://fallout.bethesda.net/en/article/4nMJ3QEIKoK16nZ0A8P7Ec/fallout-76-inventory-update-notes-january-26-2021">earlier change</a>. </li>
+    <li><strong>Dev Note</strong>: Shotguns previously would lose durability per-pellet instead of per-shot, and shotgun durability had not yet been updated to match the much-lower durability impact after the change.  Please be sure to provide feedback on this change, especially if you feel that Shotguns no-longer have durability that’s comparable to other weapons. </li>
+    <li>Addressed an issue where NPCs using Laser Rifles can occasionally deal unexpectedly high damage. </li>
+    <li><strong>Dev Note</strong>: This occurred when those NPCs were using Laser Rifles with Sniper barrels which will charge over time when not being fired in order to deal more damage on the next shot.  These mods have been removed from NPC-specific Laser Rifles. </li>
+    <li>Addressed an issue where Tormentor perk had no effect for automatic weapons. </li>
+    <li>Addressed an issue where weapons other than Shotguns could be affected by the Enforcer perk in specific circumstances.  </li>
     </ul>
     <p><strong>PTS Only</strong> </p>
     <ul>
-      <li>PTS players will have all Perk Loadout and Camp Slots by default </li>
-      <li>PTS players will now be able to access their shelters </li>
+    <li>PTS players will have all Perk Loadout and Camp Slots by default </li>
+    <li>PTS players will now be able to access their shelters </li>
     </ul>
     <h4 id="general">General</h4>
     <ul>
-      <li>Benefits to buy and sell prices at NPC vendors from CHA is no longer capped at 25 and now scales all the way to 100. </li>
-      <li>Fixed missing text for some Lunchbox effects </li>
-      <li>Damage delt by Damage Reflection effects is now scaled by DR </li>
-      <li>Fixed a case where Perk Cards could be incorrectly unequipped when logging in </li>
-      <li>A dialogue box is now shown if any Perk Cards were unequipped during log in </li>
-      <li>Updated the scrap confirm dialogue box to provide more information about the item being scrapped </li>
-      <li>Quantity of the item being scrapped. This also applies to creating items </li>
-      <li>If any mods can be learned from scrapping </li>
-      <li>The complete item name is now displayed correctly </li>
+    <li>Benefits to buy and sell prices at NPC vendors from CHA is no longer capped at 25 and now scales all the way to 100. </li>
+    <li>Fixed missing text for some Lunchbox effects </li>
+    <li>Damage delt by Damage Reflection effects is now scaled by DR </li>
+    <li>Fixed a case where Perk Cards could be incorrectly unequipped when logging in </li>
+    <li>A dialogue box is now shown if any Perk Cards were unequipped during log in </li>
+    <li>Updated the scrap confirm dialogue box to provide more information about the item being scrapped </li>
+    <li>Quantity of the item being scrapped. This also applies to creating items </li>
+    <li>If any mods can be learned from scrapping </li>
+    <li>The complete item name is now displayed correctly </li>
     </ul>
     <h4 id="weaponsandarmors">Weapons and Armors</h4>
     <ul>
-      <li>Civil Unrest and Bunker Buster no longer incorrectly display as a 5-star Legendary weapon </li>
-      <li>Added item tags for the following headwear item types </li>
-      <li>Bandana </li>
-      <li>Mask </li>
-      <li>Gasmask </li>
-      <li>Hat </li>
-      <li>Added item tag for Heavy, Medium, and Light Armor </li>
-      <li>Added item tag for Improvised weapons </li>
-      <li>Thirst Zapper </li>
-      <li>Quad Legendary Mod now works correctly with the Thirst Zapper </li>
-      <li>Karma Syringer </li>
-      <li>Updated effect description </li>
-      <li>Gatling Plasma </li>
-      <li>Now deals split damage similar to other plasma weapons </li>
+    <li>Civil Unrest and Bunker Buster no longer incorrectly display as a 5-star Legendary weapon </li>
+    <li>Added item tags for the following headwear item types </li>
+    <li>Bandana </li>
+    <li>Mask </li>
+    <li>Gasmask </li>
+    <li>Hat </li>
+    <li>Added item tag for Heavy, Medium, and Light Armor </li>
+    <li>Added item tag for Improvised weapons </li>
+    <li>Thirst Zapper </li>
+    <li>Quad Legendary Mod now works correctly with the Thirst Zapper </li>
+    <li>Karma Syringer </li>
+    <li>Updated effect description </li>
+    <li>Gatling Plasma </li>
+    <li>Now deals split damage similar to other plasma weapons </li>
     </ul>
     <h4 id="weaponandarmormods">Weapon and Armor Mods</h4>
     <ul>
-      <li>Adamantium </li>
-      <li>Fixed an issue where multiple armor parts with this effect did not stack </li>
-      <li>The following are no longer consider Costumes </li>
-      <li>Vault 63 Riot Control Helmet </li>
-      <li>Burnt Vault 63 Riot Control Helmet </li>
-      <li>Vault 63 Recon Helmet </li>
-      <li>Burnt Vault 63 Recon Helmet </li>
-      <li>Vault 63 Security Helmet </li>
-      <li>Burnt Vault 63 Security Helmet </li>
-      <li>Handmade </li>
-      <li>Fixed an issue where Handmade Rifle Reflex Sight (Circle) mod would not display in players inventory </li>
-      <li>Gatling Plasma </li>
-      <li>New mod plans added are tradable </li>
-      <li>Updated Beam Splitter to work similar to other splitter mods </li>
-      <li>Now fires +4 projectiles instead of flame projectiles </li>
-      <li><strong>New</strong>: Flamer Nozzle (Scrap to Learn) </li>
-      <li>Converts weapon to flamer style weapon </li>
-      <li><strong>New</strong>: Accelerated Nozzle (Find Plans) </li>
-      <li>Increased fire rate </li>
-      <li><strong>New</strong>: Gamma Wave Emitter (Find Plans) </li>
-      <li>Adds burning damage </li>
-      <li>Converts some damage into Fire </li>
-      <li><strong>New</strong>: Calibrated Capacitor (Find Plans) </li>
-      <li>Adds Crit Damage </li>
-      <li><strong>New</strong>: Large Core Receptacle (Find Plans) </li>
-      <li>Increases ammo capacity </li>
-      <li><strong>New</strong>: Stinging Core Receptacle (Find Plans) </li>
-      <li>Armor Penetration </li>
-      <li><strong>New</strong>: Swift Core Receptacle (Find Plans) </li>
-      <li>Reload Speed </li>
-      <li>War Drum </li>
-      <li>No longer uses Tin Cans in crafting </li>
-      <li>Added Steel and Lead requirements for crafting </li>
+    <li>Adamantium </li>
+    <li>Fixed an issue where multiple armor parts with this effect did not stack </li>
+    <li>The following are no longer consider Costumes </li>
+    <li>Vault 63 Riot Control Helmet </li>
+    <li>Burnt Vault 63 Riot Control Helmet </li>
+    <li>Vault 63 Recon Helmet </li>
+    <li>Burnt Vault 63 Recon Helmet </li>
+    <li>Vault 63 Security Helmet </li>
+    <li>Burnt Vault 63 Security Helmet </li>
+    <li>Handmade </li>
+    <li>Fixed an issue where Handmade Rifle Reflex Sight (Circle) mod would not display in players inventory </li>
+    <li>Gatling Plasma </li>
+    <li>New mod plans added are tradable </li>
+    <li>Updated Beam Splitter to work similar to other splitter mods </li>
+    <li>Now fires +4 projectiles instead of flame projectiles </li>
+    <li><strong>New</strong>: Flamer Nozzle (Scrap to Learn) </li>
+    <li>Converts weapon to flamer style weapon </li>
+    <li><strong>New</strong>: Accelerated Nozzle (Find Plans) </li>
+    <li>Increased fire rate </li>
+    <li><strong>New</strong>: Gamma Wave Emitter (Find Plans) </li>
+    <li>Adds burning damage </li>
+    <li>Converts some damage into Fire </li>
+    <li><strong>New</strong>: Calibrated Capacitor (Find Plans) </li>
+    <li>Adds Crit Damage </li>
+    <li><strong>New</strong>: Large Core Receptacle (Find Plans) </li>
+    <li>Increases ammo capacity </li>
+    <li><strong>New</strong>: Stinging Core Receptacle (Find Plans) </li>
+    <li>Armor Penetration </li>
+    <li><strong>New</strong>: Swift Core Receptacle (Find Plans) </li>
+    <li>Reload Speed </li>
+    <li>War Drum </li>
+    <li>No longer uses Tin Cans in crafting </li>
+    <li>Added Steel and Lead requirements for crafting </li>
     </ul>
     <h4 id="foodandaiditems">Food and Aid Items</h4>
     <ul>
-      <li>Herd Mentality Serum </li>
-      <li>Updated description to indicate proximity to teammates is irrelevant </li>
-      <li>Bobblehead: Medicine </li>
-      <li>Now benefits the Team Medic Perk </li>
-      <li>Spiked Venison and Tato Stew </li>
-      <li>No longer incorrectly gains a damage buff from Slow Metabolizer </li>
+    <li>Herd Mentality Serum </li>
+    <li>Updated description to indicate proximity to teammates is irrelevant </li>
+    <li>Bobblehead: Medicine </li>
+    <li>Now benefits the Team Medic Perk </li>
+    <li>Spiked Venison and Tato Stew </li>
+    <li>No longer incorrectly gains a damage buff from Slow Metabolizer </li>
     </ul>
     <h4 id="legendarymods">Legendary Mods</h4>
     <ul>
-      <li>When scrapping items, the Legendary Mods that can be received or learned are now listed </li>
-      <li>Fixed an issue where CHA, INT, and LCK Legendary Mods could not be found on weapons </li>
-      <li>Legendary Mods in the Tinker Bench are now split into groups by star count </li>
-      <li>Two Shot </li>
-      <li>Hid the accuracy and recoil details in the description text. They are still visible within the workbench menu. Dev Note: These parameters weren’t very quantitative and cluttered the effect description. </li>
-      <li>Durability </li>
-      <li>Now grants +50 Durability to the item </li>
+    <li>When scrapping items, the Legendary Mods that can be received or learned are now listed </li>
+    <li>Fixed an issue where CHA, INT, and LCK Legendary Mods could not be found on weapons </li>
+    <li>Legendary Mods in the Tinker Bench are now split into groups by star count </li>
+    <li>Two Shot </li>
+    <li>Hid the accuracy and recoil details in the description text. They are still visible within the workbench menu. Dev Note: These parameters weren’t very quantitative and cluttered the effect description. </li>
+    <li>Durability </li>
+    <li>Now grants +50 Durability to the item </li>
     </ul>
     <h4 id="accessibility">Accessibility</h4>
-    <p>A suite of new accessibility features are coming to the game with this update! </p>
+    <p>A suite of new accessibility features are coming to the game with this update!  </p>
     <p>When you enter the game for the first time, you’ll be presented with the Accessibility Menu that includes the new settings. This will only appear once and if you need to change any of these settings in the future, go to Settings &gt; Accessibility. </p>
     <p><strong>Speech-to-Text</strong></p>
     <p>Turning Speech-to-Text ON will add a new message window to the UI that will transcribe all voice communication from other players in the area. </p>
@@ -576,25 +419,42 @@
     <p>Message Window Visibility – Changes the transparency of the message window. </p>
     <p><strong>Text-to-Speech</strong> </p>
     <ul>
-      <li>Turning Text-to-Speech ON will allow players to type text into the message window and have that text converted into audible speech for other players in the area who have Text-to-Speech ON. </li>
-      <li>Text-to-Speech Voice – Allows you to choose between a masculine or feminine voice type. </li>
-      <li>Chat Volume – Allows you to adjust the volume of the incoming text-to-speech audio. </li>
+    <li>Turning Text-to-Speech ON will allow players to type text into the message window and have that text converted into audible speech for other players in the area who have Text-to-Speech ON. </li>
+    <li>Text-to-Speech Voice – Allows you to choose between a masculine or feminine voice type. </li>
+    <li>Chat Volume – Allows you to adjust the volume of the incoming text-to-speech audio. </li>
     </ul>
     <p><strong>Screen Narration</strong></p>
     <ul>
-      <li>When the setting is ON, you’ll hear the audible description of emotes from other players in the area. For example: “[Player] wants to team up!” </li>
+    <li>When the setting is ON, you’ll hear the audible description of emotes from other players in the area. For example: “[Player] wants to team up!” </li>
     </ul>
     <p><strong>UI Navigation</strong></p>
     <ul>
-      <li>Digital Input </li>
-      <li>Several screens relied completely on analog stick input and that has been addressed to allow keyboard control on PCs and d-pad control on consoles. This includes the Challenges, Scoreboard, Map, and Character Creation screens. </li>
-      <li>Analog Input </li>
-      <li>Several screens didn’t support analog inputs to navigate the UI, so that analog functionality has been added to the Favorites Wheel and Social Panel. </li>
-      <li>Single Key Presses </li>
-      <li>Fast Travel Countdown Cancel – Now allows a single button command to cancel the fast travel instead of clicking both the left and right analog sticks. </li>
-      <li>Social Menu – Allows a single button command to enter the Social Menu instead of having to hold CTRL-TAB on PC. </li>
+    <li>Digital Input </li>
+    <li>Several screens relied completely on analog stick input and that has been addressed to allow keyboard control on PCs and d-pad control on consoles. This includes the Challenges, Scoreboard, Map, and Character Creation screens. </li>
+    <li>Analog Input </li>
+    <li>Several screens didn’t support analog inputs to navigate the UI, so that analog functionality has been added to the Favorites Wheel and Social Panel. </li>
+    <li>Single Key Presses </li>
+    <li>Fast Travel Countdown Cancel – Now allows a single button command to cancel the fast travel instead of clicking both the left and right analog sticks. </li>
+    <li>Social Menu – Allows a single button command to enter the Social Menu instead of having to hold CTRL-TAB on PC. </li>
     </ul>
-  </div>
-</div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
 
 </html>
+
+
