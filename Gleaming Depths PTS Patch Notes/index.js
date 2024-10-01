@@ -1,3 +1,6 @@
+document.body.innerHTML = document.body.innerHTML.replaceAll(/(<div.*article-el-h3(.|\n)*?div>)/gm,'</div><button type="button" class="button collapsible">$1</button><div class="content">');
+document.body.innerHTML = document.body.innerHTML.replace("<div class=\"footer\">", "</div>\n<div class=\"footer\">");
+
 var coll = document.getElementsByClassName("collapsible");
 var triDiv = document.createElement('i');
 triDiv.classList.add('fa');
