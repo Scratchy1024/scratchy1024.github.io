@@ -74,6 +74,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+.paragraph {
+  margin-bottom: 1em;
+}
+.miner-note strong{
+  color: red;
+}
+.miner-note {
+  color: red;
+  margin-bottom: 1em;
+}
+.formID {
+  border-radius: 5px;
+  display: inline-block;
+  background-color: rgb(172, 78, 78);
+  color: white;
+  padding: .2em;
+}
 @media screen and (min-width: 1000px) {
   body {
     max-width: 50%;
@@ -84,7 +101,7 @@ body {
   display: inline-block;
 }
 #logo {
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
   margin-left: auto;
 }
