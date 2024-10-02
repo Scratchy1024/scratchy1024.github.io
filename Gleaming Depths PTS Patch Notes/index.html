@@ -3,7 +3,9 @@
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="main.css">
 <html>
-<div class="title"><h1>Annotated Gleaming Depths PTS Patch Notes</h1></div>
+<div class="header bar">
+  <h1>Annotated Gleaming Depths PTS Patch Notes</h1>
+</div>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">C.A.M.P. Pets</div>
 <div class="paragraph">Say hello to two new fuzzy friends who will help bring your C.A.M.P, to life! We’re
   excited to bring C.A.M.P. Pets to Fallout 76 starting with a Cat and a Dog. And yes, you can pet them.
@@ -26,8 +28,11 @@
 <div class="paragraph">As well as being a cute dweller in your C.A.M.P., they will also bring you an item
   every so often! This Pet Treasure system allows your fuzzy friend to show their love for you by bringing you
   a little treat! </div>
-<div class="miner-note"><strong>Miner Note</strong>: Gifts currently included random 1* legendary gear, 1* legendary mods, and 2-5 legendary scrip.
-  <br />See: <div class="formID">CAMPPets_LL_PetTreasurePlayerGift_Cat01 [LVLI:0079B108]</div><br />or <div class="formID">CAMPPets_LL_PetTreasurePlayerGift_Dog01 [LVLI:0079B109]</div></div>
+<div class="miner-note"><strong>Miner Note</strong>: Gifts currently include random 1* legendary gear, 1* legendary
+  mods, and 2-5 legendary scrip.
+  <br />See: <div class="formID">CAMPPets_LL_PetTreasurePlayerGift_Cat01 [LVLI:0079B108]</div><br />or <div
+    class="formID">CAMPPets_LL_PetTreasurePlayerGift_Dog01 [LVLI:0079B109]</div>
+</div>
 <div class="paragraph">We hope you enjoy the C.A.M.P. Pet feature as much as we did creating it! </div>
 <div class="paragraph">Keep an eye out for more pets in the future! </div>
 <hr>
@@ -175,7 +180,19 @@
           50%. Deflect chance receives a bonus while wearing Heavy Armor or Power Armor (+50% multiplier). While in
           Power
           Armor, the amount of damage reflected is doubled (200%).</li>
+        <li><div class="miner-note"><strong>Miner Note</strong>: Heavy armors include:
+        <ul>
+          <li>Heavy leather armor</li>
+          <li>Heavy metal armor</li>
+          <li>Heavy combat armor</li>
+          <li>Heavy raider armor</li>
+          <li>Heavy robot armor</li>
+        </ul>
+        Any 5 pieces, reguardless of set type, will count.
+        <br />See: <div class="formID">STAT_BeneficialPerk "Player Beneficial Stat Mod Perk" [PERK:0018ADAD]</div>
+      </div></li>
       </ul>
+
     </div>
   </li>
   <li>
@@ -186,6 +203,7 @@
         <li><strong>New effect</strong>: 5% chance per rank to Deflect ranged attacks for 6 seconds when firing a
           heavy
           weapon.</li>
+        <li><div class="miner-note"><strong>Miner Note</strong>: Stacks additively with Ricochet<br />See: <div class="formID">FortifyDeflectChance "Deflect Chance" [MGEF:007AE492]</div></div></li>
       </ul>
     </div>
   </li>
@@ -203,6 +221,7 @@
       <ul>
         <li>Ranks reduced from 3 to 1</li>
         <li><strong>New Effect</strong>: Now increases Evade Chance based on AGI.</li>
+        <li><div class="miner-note"><strong>Miner Note</strong>: Stacks additively with Serendipity<br />See: <div class="formID">AbPerkFortifyEvadeChance "Evade Chance" [MGEF:007ACAFD]</div></div></li>
       </ul>
     </div>
   </li>
@@ -333,6 +352,9 @@
   </li>
   <li>Harpoon Gun: 175 -&gt; 195</li>
   <li>Hunting Rifle: 70 -&gt; 100</li>
+  <ul>
+    <li><div class="miner-note"><strong>Miner Note</strong>: The Hunting Rifle's ultracite reciever has an unintentional base damage bonus, which will make that mod combination temporarily overperform until fixed</div></li>
+  </ul>
   <li>Lever Action Rifle: 75 -&gt; 88</li>
   <li>Pepper Shaker: 60 -&gt; 75</li>
   <li>Pipe Bolt-Action: 70 -&gt; 94</li>
@@ -343,6 +365,9 @@
   <li>Single Action Revolver 62 -&gt; 82</li>
   <li>The Dragon: 225 -&gt; 255</li>
   <li>Western Revolver: 65 -&gt; 84</li>
+  <ul>
+  <li><div class="miner-note"><strong>Miner Note</strong>: The Western Revolver's crit recievers have unintentional base damage bonuses, which will make that mod combination temporarily overperform until fixed</div></li>
+  </ul>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h4">Weapon Mod Adjustments
 </div>
@@ -353,24 +378,28 @@
     <ul>
       <li>Reduced DoT damage</li>
       <li>Reduced fire damage</li>
+      <li><div class="miner-note"><strong>Miner Note</strong>: 26 &#x1F525; -> 19 &#x1F525;</div></li>
     </ul>
   </li>
   <li>Ultracite Laser Gun
     <ul>
       <li>Reduced DoT damage</li>
       <li>Reduced fire damage</li>
+      <li><div class="miner-note"><strong>Miner Note</strong>: 24 &#x1F525; -> 18 &#x1F525;</div></li>
     </ul>
   </li>
   <li>Gatling Laser
     <ul>
       <li>Increased DoT damage</li>
       <li>Reduced fire damage</li>
+      <li><div class="miner-note"><strong>Miner Note</strong>: 15 &#x1F525; -> 12 &#x1F525;</div></li>
     </ul>
   </li>
   <li>Ultracite Gatling Laser
     <ul>
       <li>Reduced DoT damage at level 35</li>
       <li>Reduced fire damage</li>
+      <li><div class="miner-note"><strong>Miner Note</strong>: 17 &#x1F525; -> 13 &#x1F525;</div></li>
     </ul>
   </li>
   <li>Plasma Gun
@@ -426,6 +455,9 @@
     </ul>
   </li>
   <li>Addressed an issue where the increased hunger/thirst penalty of the Speed Demon mutation had no effect.</li>
+  <div class="miner-note"><strong>Miner Note</strong>: Increases thirst by 50%/38%/25%/13% with ranks 0/1/2/3 of Class
+    Freak.<br />See: <div class="formID">Mutation_IncreasedHungerThirst_Perk "Speed Demon Penalty" [PERK:004DF1E5]</div>
+  </div>
   <li>Addressed an issue where the effects of the Class Freak perk, the Speed Demon Serum's impact on negative
     mutation
     effects, and RadX's effect on suppressing the effects of Speed Demon were not properly represented in the
@@ -458,6 +490,20 @@
     enemies.
   </li>
   <li>Addressed an issue where the Twisted Muscles mutation had no effect for Unarmed weapons.</li>
+  <div class="miner-note"><strong>Miner Note</strong>:
+    <ul>
+      <li>LIVE:</li>
+      <ul>
+        <li>1 & 2 handed melee: 0.2% chance to cripple</li>
+      </ul>
+      <li>PTS:</li>
+      <ul>
+        <li>Non-auto melee: 25% / 31.25% chance to cripple with/without Strange in Numbers</li>
+        <li>Auto melee: 1% / 1.5% with/without Strange in Numbers</li>
+      </ul>
+    </ul>
+    See: <div class="formID">Mutation_TwistedMuscles_Perk "Twisted Muscles" [PERK:00386ACE]</div>
+  </div>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Creatures</div>
 <div class="paragraph">These enemies previously shared weapons with players and now use enemy-specific variants of
@@ -637,7 +683,9 @@
   <li>Addressed an issue where Tormentor perk had no effect for automatic weapons.</li>
   <li>Addressed an issue where weapons other than Shotguns could be affected by the Enforcer perk in specific
     circumstances.</li>
-    <div class="miner-note"><strong>Miner Note</strong>: Thrown weapons would benefit because <div class="formID">Enforcer [PERK:00322354]</div> checked for Subject.WornHasKeyword = WeaponTypeShotgun instead of Subject.HasKeyword = WeaponTypeShotgun</div>
+  <div class="miner-note"><strong>Miner Note</strong>: Thrown weapons would benefit because <div class="formID">Enforcer
+      [PERK:00322354]</div> checked for Subject.WornHasKeyword = WeaponTypeShotgun instead of Subject.HasKeyword =
+    WeaponTypeShotgun</div>
 </ul>
 <div class="paragraph"><strong>PTS Only</strong> </div>
 <ul>
@@ -682,12 +730,16 @@
   <li>Karma Syringer
     <ul>
       <li>Updated effect description</li>
-      <div class="miner-note"><strong>Miner Note</strong>:<br /> Old: Makes the target incredibly powerful for 30 Seconds, but incredibly weak for 60 Seconds when it wears off<br /><br />New: Grants Target +25 DR and +15% Damage for 30 Seconds. Afterwards, Target has -100 DR and -50% Damage for 60 Seconds.</ul>
+      <div class="miner-note"><strong>Miner Note</strong>:<br /> Old: Makes the target incredibly powerful for 30
+        Seconds, but incredibly weak for 60 Seconds when it wears off<br /><br />New: Grants Target +25 DR and +15%
+        Damage for 30 Seconds. Afterwards, Target has -100 DR and -50% Damage for 60 Seconds.
+    </ul>
   </li>
   <li>Gatling Plasma
     <ul>
       <li>Now deals split damage similar to other plasma weapons</li>
-      <div class="miner-note"><strong>Miner Note</strong>: 56 <i class="fa fa-bolt"></i> to 35 <i class="fa fa-crosshairs"></i> / 35 <i class="fa fa-bolt"></i></div>
+      <div class="miner-note"><strong>Miner Note</strong>: 56 <i class="fa fa-bolt"></i> to 35 <i
+          class="fa fa-crosshairs"></i> / 35 <i class="fa fa-bolt"></i></div>
     </ul>
   </li>
 </ul>
@@ -858,12 +910,12 @@
   </li>
 </ul>
 <a href="https://discord.gg/fo76datamining" style="color: inherit; text-decoration: none" target="_blank">
-<div class="footer">
-  <div id="invite">
-    <h1>.gg/fo76datamining</h1>
+  <div class="footer bar">
+    <div style="display: inline-block">
+      <h1>.gg/fo76datamining</h1>
+    </div>
+    <img style="width: 5em; height: 5em;margin-left: auto;" src="Dataminers Watermark.png" alt="Fallout 76 Dataminers logo">
   </div>
-  <img id="logo" src="Dataminers Watermark.png" alt="Fallout 76 Dataminers logo">
-</div>
 </a>
 <script src="index.js" type="text/javascript"></script>
 
