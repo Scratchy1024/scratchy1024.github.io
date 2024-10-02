@@ -6,12 +6,21 @@ var triDiv = document.createElement('i');
 triDiv.classList.add('fa');
 triDiv.classList.add('fa-caret-right');
 triDiv.classList.add('fa-2x');
-triDiv.classList.add('triangle');
+triDiv.classList.add('collapsible-triangle');
+
+var noteCountDiv = document.createElement('div');
+noteCountDiv.classList.add('note-count');
+
 var i;
 let hovercounters = [];
 
 for (let i = 0; i < coll.length; i++) {
   coll[i].insertBefore(triDiv.cloneNode(true), coll[i].firstChild);
+  var noteCount = coll[i].nextElementSibling.getElementsByClassName("miner-note").length;
+  if (noteCount > 0){
+  noteCountDiv.innerHTML = (noteCount + ' \u26CF');
+  coll[i].append(noteCountDiv.cloneNode(true));
+  }
 }
 
 for (i = 0; i < coll.length; i++) {
