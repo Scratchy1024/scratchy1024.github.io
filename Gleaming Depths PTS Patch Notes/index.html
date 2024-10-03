@@ -116,6 +116,10 @@
       <li>Rank 1 gains the effects of the former Rank 3</li>
       <li>Healing bonus increased from 150% to 200%</li>
       <li><strong>Additional effect</strong>: Benefits now also apply to Cannibal</li>
+      <li><div class="miner-note"><strong>Miner Note</strong>:
+        <ul>
+          <li>Restores 7.5% of thirst after consuming a blood pack or cannibalizing an NPC</li>
+        </ul>
     </ul>
   </div>
 </li>
@@ -126,7 +130,7 @@
       <li>Increased the healing received and hunger restored at Rank 1</li>
       <li><div class="miner-note"><strong>Miner Note</strong>:
         <ul>
-          <li>Restores 18.75% of hunger over 5s</li>
+          <li>Restores 15% of hunger over 5s</li>
           <li>Restores 15 HP/s for 5s</li>
           <li>Magnitudes are doubled with Carnivore</li>
           <li>Bloodsucker prevents the player from taking 10 rads/s for 5s</li>
@@ -273,6 +277,7 @@
   </div>
 </li>
 <li>Serendipity</li>
+<ul>
 <li>Ranks reduced from 3 to 1</li>
 <li>
   <div class="paragraph"><strong>New effect</strong>: Now increases Evade Chance while under 30% life, based on
@@ -281,7 +286,10 @@
     seconds and
     cannot happen when over encumbered or while in Power Armor.</div>
 </li>
+<li><div class="miner-note"><strong>Miner Note</strong>: Increases Evade chance by 6% / 16% / 25% / 35% / 40% at 1 / 15 / 30 / 60 / 100 LCK<br />
+  HP scales linearly between listed SPECIAL values</div></li>
 <li>
+</ul>
   <div class="paragraph">Evasive
     <ul>
       <li>Ranks reduced from 3 to 1</li>
@@ -289,8 +297,7 @@
       <li>
         <div class="miner-note"><strong>Miner Note</strong>: Stacks additively with Serendipity<br />
           See: <div class="formID">AbPerkFortifyEvadeChance "Evade Chance" [MGEF:007ACAFD]</div>
-        </div>
-      </li>
+        </div></li>
     </ul>
   </div>
 </li>
@@ -575,7 +582,7 @@
     </ul>
   </li>
   <li>Addressed an issue where the increased hunger/thirst penalty of the Speed Demon mutation had no effect.</li>
-  <li><div class="miner-note"><strong>Miner Note</strong>: Increases thirst by 50%/38%/25%/13% with ranks 0/1/2/3 of Class
+  <li><div class="miner-note"><strong>Miner Note</strong>: Increases hunger and thirst by 50%/38%/25%/13% with ranks 0/1/2/3 of Class
     Freak.<br />See: <div class="formID">Mutation_IncreasedHungerThirst_Perk "Speed Demon Penalty" [PERK:004DF1E5].</div>
   </div></li>
   <li>Addressed an issue where the effects of the Class Freak perk, the Speed Demon Serum's impact on negative
@@ -726,7 +733,7 @@
     <ul>
       <li>Reduced radiation damage at lower levels.</li>
       <li><div class="miner-note"><strong>Miner Note</strong>: Radiation damage scales from 6 &#9762; to 40 &#9762; from levels 2 to 100, rather than being a flat 30 at all levels.<br />
-      Posion damage increased from 1 <i class="fa fa-tint"></i> poison damage/s for 5s to 16 <i class="fa fa-tint"></i> poison damage/s for 5s at level 100, similar buffs at lower levels.<br />
+      Poison damage increased from 1 <i class="fa fa-tint"></i> poison damage/s for 5s to 16 <i class="fa fa-tint"></i> poison damage/s for 5s at level 100, similar buffs at lower levels.<br />
     see: <div class="formID"></div>PoisonBloodbug "Bloodbug Infection" [SPEL:001423BA].</div></li>
     </ul>
   </li>
@@ -792,8 +799,38 @@
   <li>Addressed an issue where Super Mutant Suiciders wouldn't drop mini-nukes. They now have a small chance to drop
     a
     mini-nuke when killed without exploding.</li>
+    <li><div class="miner-note"><strong>Miner Note</strong>: Mini-nukes have a 10% chance to drop<br />See: <div class="formID">LLS_Ammo_Loot_SupermutantSuicider_MiniNuke [LVLI:007ACEEB]</div></div></li>
   <li>Addressed an issue where the Health and Resistances for the Scorchbeast Queen, Ultracite Titan, and Wendigo
     Colossus/Earle weren’t using updated values.</li>
+  <li><div class="miner-note"><strong>Miner Note</strong>: 
+      <ul>
+        <li>Scorchbeast Queen:</li>
+        <ul>
+          <li>Health: 109223 -> 241408</li>
+          <li>Resistances:<br/>1000 DR / 1000 ER / 1000 CR / 1000 FR / 1000 PR / 3333 RR -><br/>
+          157 DR / 101 ER / 92 CR / 144 FR / 122 PR / 1019 RR</li>
+          <li>Listed resists are at max level</li>
+          <li>Queen is still immune to rads</li>
+        </ul>
+        <li>Ultracite Titan</li>
+        <ul>
+          <li>Health: 100000 -> 241408</li>
+          <li>Resistances:<br/>1333 DR / 1333 ER / 1333 CR / 1167 FR / 1333 PR / 1667 RR -><br/>
+          133 DR / 122 ER / 83 CR / 157 FR / 92 PR / 1019 RR</li>
+          <li>Listed resists are at max level</li>
+          <li>Titan uses the same curves as Earle</li>
+          <li>Titam is still immune to rads</li>
+        </ul>
+        <li>Wendigo Colossus/Earle</li>
+        <ul>
+          <li>Health: 100000 -> 241408</li>
+          <li>Resistances:<br/>1333 DR / 1333 ER / 1333 CR / 1167 FR / 1333 PR / 1667 RR -><br/>
+            133 DR / 122 ER / 83 CR / 157 FR / 92 PR / 1019 RR</li>
+            <li>Listed resists are at max level</li>
+            <li>Earle still immune to rads</li>
+        </ul>
+      </ul>
+      </div></li>
   <li>Addressed an issue where Shotgun durability was much higher than expected as a result of an <a
       href="https://fallout.bethesda.net/en/article/4nMJ3QEIKoK16nZ0A8P7Ec/fallout-76-inventory-update-notes-january-26-2021">earlier
       change</a>.
@@ -818,7 +855,7 @@
     circumstances.</li>
   <li><div class="miner-note"><strong>Miner Note</strong>: Thrown weapons would benefit because <div class="formID">Enforcer
       [PERK:00322354]</div> checked for Subject.WornHasKeyword = WeaponTypeShotgun instead of Subject.HasKeyword =
-    WeaponTypeShotgun</div></li>
+    WeaponTypeShotgun.</div></li>
 </ul>
 <div class="paragraph"><strong>PTS Only</strong> </div>
 <ul>
@@ -827,9 +864,23 @@
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h4">General</div>
 <ul>
-  <li>Benefits to buy and sell prices at NPC vendors from CHA is no longer capped at 25 and now scales all the way
-    to
-    100.</li>
+  <li>Benefits to buy and sell prices at NPC vendors from CHA is no longer capped at 25 and now scales all the way to 100</li>
+  <div class="miner-note"><strong>Miner Note</strong>:
+  <ul>
+    <li>LIVE scaling:</li>
+    <ul>
+      <li>Purchase price mult decreases from 2x -> 1.75x non-linearly from 0-25 CHR</li>
+      <li>Sell price mult increases from 1.1x -> 1.25x non-linearly from 0-25 CHR</li>
+    </ul>
+    <li>PTS scaling:</li>
+    <ul>
+      <li>Purchase price mult decreases from 2.5x / 2x / 1.75x / 1.6x / 1.5x at  1 / 15 / 30 / 60 / 100 CHR</li>
+      <li>Sell price mult increases from 1.1x / 1.18x / 0.25x / 0.28x / 0.30x at  1 / 15 / 30 / 60 / 100 CHR</li>
+    </ul>
+    <li>See: <div class="formID">misc\curvetables\json\vendors</div></li>
+    </ul>
+  </ul>
+  </div>
   <li>Fixed missing text for some Lunchbox effects</li>
   <li>Damage delt by Damage Reflection effects is now scaled by DR</li>
   <li>Fixed a case where Perk Cards could be incorrectly unequipped when logging in</li>
