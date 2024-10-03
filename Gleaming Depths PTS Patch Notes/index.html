@@ -81,7 +81,7 @@
       <li>Ranks reduced from 3 to 1</li>
       <li>Rank 1 Perk Point cost increased from 1 to 2</li>
       <li><strong>New effect</strong>: The positive effects of pre-war alcohol last twice as long</li>
-      <div class="miner-note"><strong>Miner Note</strong>: The following alcohols count for this perk
+      <li><div class="miner-note"><strong>Miner Note</strong>: The following alcohols count for this perk
         <ul>
           <li>Beer</li>
           <li>Blackwater Brew</li>
@@ -104,7 +104,7 @@
         To count, consumable must have <div class="formID">DrinkTypeAlcohol [KYWD:0010C416]</div><br />AND NOT <div
           class="formID">BlockPartyBoyPerk [KYWD:00405F22]</div><br />OR <div class="formID">DrinkTypeSoda
           [KYWD:0013484B]</div>
-      </div>
+      </div></li>
     </ul>
   </div>
 </li>
@@ -124,7 +124,7 @@
     <ul>
       <li>Ranks reduced from 3 to 1</li>
       <li>Increased the healing received and hunger restored at Rank 1</li>
-      <div class="miner-note"><strong>Miner Note</strong>:
+      <li><div class="miner-note"><strong>Miner Note</strong>:
         <ul>
           <li>Restores 18.75% of hunger over 5s</li>
           <li>Restores 15 HP/s for 5s</li>
@@ -132,7 +132,7 @@
           <li>Bloodsucker prevents the player from taking 10 rads/s for 5s</li>
           <li>Fixed a bug where the player would heal more without Cannibal than with</li>
         </ul>
-      </div>
+      </div></li>
     </ul>
   </div>
 </li>
@@ -352,7 +352,7 @@
   <li>Nuka Grenade
     <ul>
       <li>Also has a slight reduction to the damage radius to differentiate from Nuka Quantum Grenades.</li>
-      <div class="miner-note"><strong>Miner Note</strong>: There's been no change to the damage radius as of 10/1.</div>
+      <li><div class="miner-note"><strong>Miner Note</strong>: There's been no change to the damage radius as of 10/1.</div></li>
     </ul>
   </li>
   <li>Nuka Quantum Grenade
@@ -361,7 +361,7 @@
       <li><strong>Dev Note</strong>: Adjustments to the size of the explosion VFX to better match the radius in
         which
         the explosion deals damage will occur at a later date.</li>
-      <div class="miner-note"><strong>Miner Note</strong>: There's been no change to the damage radius as of 10/1.</div>
+        <li><div class="miner-note"><strong>Miner Note</strong>: There's been no change to the damage radius as of 10/1.</div></li>
     </ul>
   </li>
   <li>Orbital Strike Beacon</li>
@@ -575,9 +575,9 @@
     </ul>
   </li>
   <li>Addressed an issue where the increased hunger/thirst penalty of the Speed Demon mutation had no effect.</li>
-  <div class="miner-note"><strong>Miner Note</strong>: Increases thirst by 50%/38%/25%/13% with ranks 0/1/2/3 of Class
+  <li><div class="miner-note"><strong>Miner Note</strong>: Increases thirst by 50%/38%/25%/13% with ranks 0/1/2/3 of Class
     Freak.<br />See: <div class="formID">Mutation_IncreasedHungerThirst_Perk "Speed Demon Penalty" [PERK:004DF1E5].</div>
-  </div>
+  </div></li>
   <li>Addressed an issue where the effects of the Class Freak perk, the Speed Demon Serum's impact on negative
     mutation
     effects, and RadX's effect on suppressing the effects of Speed Demon were not properly represented in the
@@ -610,7 +610,7 @@
     enemies.
   </li>
   <li>Addressed an issue where the Twisted Muscles mutation had no effect for Unarmed weapons.</li>
-  <div class="miner-note"><strong>Miner Note</strong>:
+  <li><div class="miner-note"><strong>Miner Note</strong>:
     <ul>
       <li>LIVE:</li>
       <ul>
@@ -623,7 +623,7 @@
       </ul>
     </ul>
     See: <div class="formID">Mutation_TwistedMuscles_Perk "Twisted Muscles" [PERK:00386ACE].</div>
-  </div>
+  </div></li>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Creatures</div>
 <div class="paragraph">These enemies previously shared weapons with players and now use enemy-specific variants of
@@ -816,9 +816,9 @@
   <li>Addressed an issue where Tormentor perk had no effect for automatic weapons.</li>
   <li>Addressed an issue where weapons other than Shotguns could be affected by the Enforcer perk in specific
     circumstances.</li>
-  <div class="miner-note"><strong>Miner Note</strong>: Thrown weapons would benefit because <div class="formID">Enforcer
+  <li><div class="miner-note"><strong>Miner Note</strong>: Thrown weapons would benefit because <div class="formID">Enforcer
       [PERK:00322354]</div> checked for Subject.WornHasKeyword = WeaponTypeShotgun instead of Subject.HasKeyword =
-    WeaponTypeShotgun</div>
+    WeaponTypeShotgun</div></li>
 </ul>
 <div class="paragraph"><strong>PTS Only</strong> </div>
 <ul>
@@ -863,16 +863,17 @@
   <li>Karma Syringer
     <ul>
       <li>Updated effect description</li>
-      <div class="miner-note"><strong>Miner Note</strong>:<br /> Old: Makes the target incredibly powerful for 30
-        Seconds, but incredibly weak for 60 Seconds when it wears off<br /><br />New: Grants Target +25 DR and +15%
+      <li><div class="miner-note"><strong>Miner Note</strong>:<br /> Old: Makes the target incredibly powerful for 30
+        Seconds, but incredibly weak for 60 Seconds when it wears off<br />New: Grants Target +25 DR and +15%
         Damage for 30 Seconds. Afterwards, Target has -100 DR and -50% Damage for 60 Seconds.
+      </div></li>
     </ul>
   </li>
   <li>Gatling Plasma
     <ul>
       <li>Now deals split damage similar to other plasma weapons</li>
-      <div class="miner-note"><strong>Miner Note</strong>: 56 <i class="fa fa-bolt"></i> energy to 35 <i
-          class="fa fa-crosshairs"></i> physical / 35 <i class="fa fa-bolt"></i> energy</div>
+      <li><div class="miner-note"><strong>Miner Note</strong>: 56 <i class="fa fa-bolt"></i> energy to 35 <i
+          class="fa fa-crosshairs"></i> physical / 35 <i class="fa fa-bolt"></i> energy</div></li>
     </ul>
   </li>
 </ul>
@@ -930,13 +931,13 @@
       <li><strong>New</strong>: Calibrated Capacitor (Find Plans)
         <ul>
           <li>Adds Crit Damage</li>
-          <div class="miner-note"><strong>Miner Note</strong>: +100% crit damage, +20% AP cost</div>
+          <li><div class="miner-note"><strong>Miner Note</strong>: +100% crit damage, +20% AP cost</div></li>
         </ul>
       </li>
       <li><strong>New</strong>: Large Core Receptacle (Find Plans)
         <ul>
           <li>Increases ammo capacity</li>
-          <div class="miner-note"><strong>Miner Note</strong>: +50% ammo capacity, -20% reload speed</div>
+          <li><div class="miner-note"><strong>Miner Note</strong>: +50% ammo capacity, -20% reload speed</div></li>
         </ul>
       </li>
       <li><strong>New</strong>: Stinging Core Receptacle (Find Plans)
@@ -951,7 +952,7 @@
           <li><div class="miner-note"><strong>Miner Note</strong>: +30% reload speed, -5% AP cost</div></li>
         </ul>
       </li>
-      <div class="miner-note"><strong>Miner Note</strong>: The Gatling Plasma's default magazine increases reload speed by 5% and AP cost by 5% and will be replaced when swapping magazines</div>
+      <li><div class="miner-note"><strong>Miner Note</strong>: The Gatling Plasma's default magazine increases reload speed by 5% and AP cost by 5% and will be replaced when swapping magazines</div></li>
     </ul>
   </li>
   <li>War Drum
