@@ -141,3 +141,16 @@ h1,
 .article-el-h5 {
   font-size: 0.83em;
 }
+
+.fa-tint {
+  color: green;
+}
+.fa-snowflake-o {
+  color: lightblue;
+}
+.fa-crosshairs {
+  color:black;
+}
+.fa-bolt {
+  color: lime;
+}
