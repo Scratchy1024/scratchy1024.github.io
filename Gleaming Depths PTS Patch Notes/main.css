@@ -5,18 +5,11 @@
   --theme-collapsible-color:rgb(30,30,30);
   --theme-content-background-color:rgb(45,45,45);
   --theme-color-1:orchid;
-  --theme-color-2:purple;
-  --theme-color-3:rebeccapurple;
+  --theme-color-2:darkmagenta;
+  --theme-color-3:rgb(101, 62, 105);
+  --theme-color-4:rgb(129, 29, 156);
 }
 body {
-  --theme-background-color:rgb(18,18,18);
-  --theme-text-color:whitesmoke;
-  --theme-bar-color:rgb(23,23,23);
-  --theme-collapsible-color:rgb(30,30,30);
-  --theme-content-background-color:rgb(45,45,45);
-  --theme-color-1:orchid;
-  --theme-color-2:purple;
-  --theme-color-3:rebeccapurple;
   font-family: Montserrat Regular, sans-serif;
   color: white;
   background-repeat: repeat;
@@ -53,6 +46,10 @@ body {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
+  border: 1px solid var(--theme-color-2);
+}
+.collapsebutton:hover {
+  border-color: var(--theme-text-color);
 }
 .footer {
   align-items: center;
@@ -93,7 +90,6 @@ body {
 }
 .button {
   cursor: pointer;
-  border: none;
   padding: 10px;
   margin: 5px 0px 0px 0px;
   text-align: left;
@@ -106,6 +102,7 @@ body {
   transition-delay: 0.2s;
   transition: border-radius 0s ease-out;
   transition-delay: 0.2s;
+  border: 1px solid var(--theme-collapsible-color);
 }
 .button #text{
   color: var(--theme-text-color);
@@ -116,7 +113,9 @@ body {
   border-radius: 10px 10px 0 0;
   transition: border-radius 0s ease-out;
 }
-
+.button:hover {
+  border-color: white;
+}
 .paragraph {
   margin: .7em 0em .7em 0em;
   font-weight: 400;
@@ -141,19 +140,23 @@ body {
   margin: 0px 8px;
 }
 .miner-note strong{
-  color: var(--theme-color-1);
+  color: var(--theme-text-color);
 }
 .miner-note {
-  color: var(--theme-color-1);
+  color: var(--theme-text-color);
   margin-bottom: 1em;
+  padding: .5em;
   line-height: 1.65em;
+  background-color: var(--theme-color-3);
+  display: inline-block;
+  border-radius: 10px;
 }
 .formID {
   border-radius: 5px;
   display: inline-block;
-  background-color: var(--theme-color-3);
+  background-color: var(--theme-color-4);
   color: var(--theme-text-color);
-  padding: 0em .2em;
+  padding: 0em .4em;
   margin: .1em 0em .1em 0em;
 }
 
@@ -191,7 +194,10 @@ h1,
   font-size: 0.83em;
 }
 
-.fa-tint {
+.bleed {
+  color: darkred;
+}
+.poison {
   color: green;
 }
 .fa-snowflake-o {

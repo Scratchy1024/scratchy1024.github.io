@@ -57,12 +57,104 @@
   legendary system to take your 3-Star items and allow you turn them into 4-Star items.
   Opening a whole new avenue for you to modify your weapons and armor in ways that amplify
   your playstyle. </div>
+  <div class="miner-note"><strong>Miner Note</strong>: There are 8 unique 4 star legendary weapons than can drop from raids:
+    <ul>
+      <li>Boiling Point: Furious / Basher's / +15% Reload Speed / Pyromaniac's Flamer</li>
+        <ul>
+          <li>Special effects: +25 Poison Resistance (Actually -25% poison damage), -5 Durability</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Cauterizer: Vampire's / +50% Crit Damage / +15% Crit Fill / Encircler's Chainsaw</li>
+        <ul>
+          <li>Special effects: +2 base physical damage, +12 base fire damage, +5% armor penetration, +25% AP cost</li>
+          <li>Cannot be modified with a Dual Bar or a Flamer</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Drill Fist: Anti-Armor / Crippling / Strength / Combo-Breaker's Gauntlet</li>
+        <ul>
+          <li>Special effects: Targets take 23 &#x1F525; fire damage/s for 3s, Targets take 2 <i class="fa fa-tint bleed"></i> bleed damage/s for 3s, +15% additive damage, -5 durability</li>
+          <li>Can be modded with ultracite blades to make targets take 3.25 <i class="fa fa-tint poison"></i> poison damage/s for 3s</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Flatliner: Assassin's / +50% Vats Hit Chance / Nimble / Slayer's Gauss Rifle</li>
+        <ul>
+          <li>Special effects: +40% reload speed, -5 durability</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Lickety-Split: Juggernaut's / +15 AP on kill / Resilient / Bully's Railway Rifle</li>
+        <ul>
+          <li>Special effects: -20% base damage, Railway spikes explode into sharapnel for 38 <i class="fa fa-crosshairs"></i> physical damage, </li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Resolve Breaker: Bloodied / +15 AP on kill / Steadfast / Electrician's Auto Grenade Launcher</li>
+        <ul>
+          <li>Special effects: +1 projectiles, +25% additive damage, -10 durability</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Ultracite Terror Sword: Anti-Armor / +25% Swing Speed / -40% Damage Taken While Power Attacking / Viper's</li>
+        <ul>
+          <li>54 <i class="fa fa-crosshairs"></i> base physical and 32 <i class="fa fa-tint poison"></i> base poison damage</li>
+          <li>Special effects: Targets take 10 <i class="fa fa-tint poison"></i> poison damage/s for 10s, -5 Durability</li>
+        </ul>
+    </ul>
+    <ul>
+      <li>Valkyrie: Troubleshooter's / +25% Faster Fire Rate / Ghost's / Fracturer's Gatling Laser</li>
+        <ul>
+          <li>Special effects: -50% durability loss, increased cone of fire</li>
+        </ul>
+    </ul>
+    Values are listed at max level, 4* effects are listed in the next miner note
+  </div>
 <div class="paragraph">These 4-Star Legendary items will be obtainable as drops during the raid
   and they also have a chance to drop from the new 4-Star Legendary Creatures that will spawn
   around Appalachia. </div>
 <div class="paragraph">4-Star Legendary Creatures are deadlier, faster, and tougher than the
   Legendary enemies that you’re used to. If you’re lucky (unlucky?) enough to come across one,
-  you’ll also notice that they have new unique modifiers applied to them.
+  you’ll also notice that they have new unique modifiers applied to them.</div>
+
+  <div class="miner-note"><strong>Miner Note</strong>: There are 11 unique modifiers for 4 star legendary enemies
+  <ul>
+    <li>Ballisitic Absorbing: Creature takes 0 damage from ballistic weapons or weapons with ballistic ammo</li>
+      <ul>
+        <li>Effects checks player does NOT have have keyword <div class="formID">AmmoTypeBallistic [KYWD:003896DE]</div> OR <div class="formID">WeaponTypeBallistic [KYWD:00092A86]</div></li>
+      </ul>
+    <li>Fire Absorbing: Creature takes 0 damage from fire typed attacks</li>
+    <ul>
+      <li>Effects checks if typed incoming weapon damage or typed incoming spell magnitude is <div class="formID">dtFire "Fire Damage" [DMGT:00060A82]</div></li>
+    </ul>
+    <li>Energy Absorbing: Creature takes 0 damage from energy typed attacked</li>
+    <ul>
+      <li>Effects checks if typed incoming weapon damage or typed incoming spell magnitude is <div class="formID">dtEnergy "Energy Damage" [DMGT:00060A81]</div></li>
+    </ul>
+    <li>Melee Absorbing: Creature takes 0 damage from melee weapons</li>
+    <ul>
+      <li>Effects checks player does NOT have have keyword <div class="formID">WeaponTypeUnarmed [KYWD:0005240E]</div>,<br /><div class="formID">WeaponTypeMelee1H  [KYWD:0004A0A4]</div>,<br /><div class="formID">WeaponTypeMelee2H [KYWD:0004A0A5]</div>,<br /><div class="formID">WeaponTypeMeleeGeneral [KYWD:0033AB12]</div>, OR <br /><div class="formID">WeaponTypeAutomaticMelee [KYWD:006D5081]</div></li>
+    </ul>
+    <li>Explosion Absorbing: Creature takes 0 damage from explosions</li>
+    <li>Burning: Creature takes 0 damage from fire typed attacks, applies a fire DOT to hit players</li>
+    <ul>
+      <li>Targets take 30 &#x1F525; fire damage/s for 3s</li>
+      <li>Additonally has the same effects as Fire Absorbing</li>
+    </ul>
+    <li>Stealth: Creature is invisible</li>
+    <li>Energy: Creature applies an energy DOT to hit players.</li>
+    <ul>
+      <li>Targets take 30 <i class="fa fa-bolt"></i> energy damage/s for 3s</li>
+    </ul>
+    <li>Frenzy: Creature increases damage by +100% and moves 25% faster when below 35% health</li>
+    <li>Speed: Creature is 30% faster</li>
+    <li>Vampire: Creature restores 49 hp per hit</li>
+    <li>Not 100% sure this is on hit, needs testing</li>
+  </ul>
+  </div>
+
+  <div class="paragraph">
   To give you an idea of the new mods that await you, here’s a 4-Star Legendary mod from the
   Weapon, Power Armor, and Armors category:</div>
 <ul>
@@ -90,7 +182,7 @@
     <ul>
       <li>Crafting requirement: Bufftats x1</li>
     </ul>
-    <li>Choo-Choo's: 10% Chance for 500 Damage & Bloody Mess" When Sprinting Into Targets (up to 50% Chance on Full
+    <li>Choo-Choo's: 10% Chance for 500 Damage & Bloody Mess When Sprinting Into Targets (up to 50% Chance on Full
       Stack)</li>
     <ul>
       <li>Crafting requirement: Cannonball x15</li>
@@ -290,6 +382,11 @@
     <ul>
       <li>Ranks reduced from 3 to 1</li>
       <li><strong>New effect</strong>: Radiation healing scales with INT</li>
+      <li>
+        <div class="miner-note"><strong>Miner Note</strong>: +30% / 100% / 160% / 180% / 200% radaway effectiveness at 1 / 15
+          /
+          30 / 60 / 100 INT<br />Magnitude scales linearly between listed SPECIAL values</div>
+      </li>
       <li>No longer required to craft Disease Cures or Water Filters</li>
     </ul>
   </li>
@@ -584,8 +681,12 @@
             </ul>
             Any 5 pieces, reguardless of set type, will count
             <br />See: <div class="formID">STAT_BeneficialPerk "Player Beneficial Stat Mod Perk" [PERK:0018ADAD]</div>
-            <br />
             and <div class="formID">ArmorTypeHeavy "Heavy Armor" [KYWD:007ACE7A]</div>
+            <br />Update: 10/4 patch added 2 new armors
+            <ul>
+              <li>Secret Service armor</li>
+              <li>Brotherhood Recon armor</li>
+            </ul>
           </div>
         </li>
       </ul>
@@ -1106,8 +1207,8 @@
       <li>
         <div class="miner-note"><strong>Miner Note</strong>: Radiation damage scales from 6 &#9762; to 40 &#9762; from
           levels 2 to 100, rather than being a flat 30 at all levels.<br />
-          Poison damage increased from 1 <i class="fa fa-tint"></i> poison damage/s for 5s to 16 <i
-            class="fa fa-tint"></i> poison damage/s for 5s at level 100, similar buffs at lower levels.<br />
+          Poison damage increased from 1 <i class="fa fa-tint poison"></i> poison damage/s for 5s to 16 <i
+            class="fa fa-tint poison"></i> poison damage/s for 5s at level 100, similar buffs at lower levels.<br />
           see: <div class="formID"></div>PoisonBloodbug "Bloodbug Infection" [SPEL:001423BA].</div>
       </li>
     </ul>
