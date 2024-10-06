@@ -1,8 +1,18 @@
+:root {
+  --theme-background-color:rgb(18,18,18);
+  --theme-text-color:whitesmoke;
+  --theme-bar-color:rgb(23,23,23);
+  --theme-collapsible-color:rgb(30,30,30);
+  --theme-content-background-color:rgb(45,45,45);
+  --theme-color-1:orchid;
+  --theme-color-2:purple;
+  --theme-color-3:rebeccapurple;
+}
 body {
   font-family: Montserrat Regular, sans-serif;
   color: white;
   background-repeat: repeat;
-  background-color:rgb(18,18,18);
+  background-color:var(--theme-background-color);
   overflow-y: scroll;
 }
 @media screen and (min-width: 1000px) {
@@ -13,20 +23,33 @@ body {
 }
 .bar {
   border-radius: 10px;
-  background-color:rgb(31,31,31);
+  background-color:var(--theme-bar-color);
   margin: 0;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px var(--theme-color-2);
 }
 .header {
   background-image: url("Banner Art.png");
   background-position: center center;	
   background-size: cover;
   padding: 20px 20px;
+  position: relative;
+}
+#collapsebuttondiv {
+  padding: 2rem; 
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.collapsebutton {
+  background-color:var(--theme-color-2);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 .footer {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: .35em;
   padding: 10px 20px;
 }
@@ -35,18 +58,18 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: rgb(45,45,45);
+  background-color:var(--theme-content-background-color);
   border-radius: 0px 0px 10px 10px;
 }
 .collapsible-triangle {
   padding-right: 8px;
   width: .5em;
-  color: whitesmoke;
+  color: var(--theme-color-1);
 }
 .note-count {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  color: red;
+  color: var(--theme-color-1);
   font-size: 1.17em;
   margin-left: auto;
   margin-right: .5em;
@@ -55,10 +78,10 @@ body {
   position:relative;
   font-size: 1.17em;
   height: 2em;
-  color: red;
+  color: var(--theme-color-1);
 }
 .fa-sticky-note-o {
-  color: darkred;
+  color: var(--theme-color-2);
 }
 .button {
   cursor: pointer;
@@ -70,14 +93,14 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color:rgb(30,30,30);
+  background-color: var(--theme-collapsible-color);
   border-radius: 10px 10px 10px 10px;
   transition-delay: 0.2s;
   transition: border-radius 0s ease-out;
   transition-delay: 0.2s;
 }
 .button #text{
-  color: whitesmoke;
+  color: var(--theme-text-color);
   font-family: futura-pt, sans-serif;
   font-weight: 700;
 }
@@ -91,19 +114,37 @@ body {
   font-weight: 400;
   line-height: 1.65em;
 }
+.hr-sect {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin: 8px 0px;
+  color: var(--theme-color-2)
+}
+.hr-sect:after {
+  content: "";
+  flex-grow: 1;
+  background: var(--theme-color-2);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
 .miner-note strong{
-  color: red;
+  color: var(--theme-color-1);
 }
 .miner-note {
-  color: red;
+  color: var(--theme-color-1);
   margin-bottom: 1em;
   line-height: 1.65em;
 }
 .formID {
   border-radius: 5px;
   display: inline-block;
-  background-color: rgb(172, 78, 78);
-  color: white;
+  background-color: var(--theme-color-3);
+  color: var(--theme-text-color);
   padding: 0em .2em;
   margin: .1em 0em .1em 0em;
 }
@@ -123,7 +164,7 @@ h1,
 .article-el-h4 {
   font-family: futura-pt, sans-serif;
   font-weight: 700;
-  color: whitesmoke;
+  color: var(--theme-text-color);
 }
 .article-el-h1 {
   margin: 0;
