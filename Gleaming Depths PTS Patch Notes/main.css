@@ -1,4 +1,4 @@
-:root {
+body {
   --theme-background-color:rgb(18,18,18);
   --theme-text-color:whitesmoke;
   --theme-bar-color:rgb(23,23,23);
@@ -7,8 +7,6 @@
   --theme-color-1:orchid;
   --theme-color-2:purple;
   --theme-color-3:rebeccapurple;
-}
-body {
   font-family: Montserrat Regular, sans-serif;
   color: white;
   background-repeat: repeat;
