@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<html>
+<div class="header bar">
+    <h1>Annotated Ghoulvolution PTS Patch Notes</h1>
+    <h4>Last Updated: TBD</h4>
+    <div style="display: flex;">
+        <div class="feedbackbutton" style="display: inline-block;margin-left: auto;"><a
+                href="https://forms.gle/h83wTpqD9d9q1SUL7" target="_blank"
+                style="color: inherit;text-decoration: none">Site
+                feedback</a></div>
+    </div>
+</div>
+<div id="collapsebuttondiv"><button class="collapsebutton article-el-h5" onclick="toggleSections()">Expand all</button>
+</div>
+<div class="update bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Ammo</div>
+<ul>
+    <li>Fusion Cores assigned to Power Armor cannot be stored in the Ammo Box.</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Legendary Mods</div>
+<ul>
+    <li>Legendary Mod Boxes can now be scrapped for Legendary Modules. You can also learn the plans by scrapping the
+        mod boxes at the same rate as scrapping an item with the mod attached.
+        <ul>
+            <li>1-Star: 1 Module</li>
+            <li>2-Star: 3 Module</li>
+            <li>3-Star: 6 Module</li>
+            <li>4-Star: 12 Module</li>
+        </ul>
+    </li>
+    <li>Cavalier's
+        <ul>
+            <li>(Weapon) Fixed a bug causing this mod to increase damage taken instead of reducing it.</li>
+            <li>(Armor) Now grants -5% Damage Taken while sprinting.</li>
+        </ul>
+    </li>
+    <li>Sentinel's
+        <ul>
+            <li>Now grants -5% Damage Taken while standing still.</li>
+        </ul>
+    </li>
+    <li>Furious
+        <ul>
+            <li>Reworded for Onslaught.</li>
+            <li>+5% Damage per Onslaught stack, +9 max stacks.</li>
+        </ul>
+    </li>
+    <li>Pounders
+        <ul>
+            <li>Reworded for Onslaught and fixed an issue with the stack limit.</li>
+            <li>+10% Damage per Onslaught stack, +10 max stacks.</li>
+        </ul>
+    </li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Miscellaneous Fixes</div>
+<ul>
+    <li>Conductors should now correctly grant 5% AP regen.</li>
+    <li>Fixed an issue which would incorrectly inform ghoul characters they had acquired a disease from
+        environmental hazards.</li>
+    <li>Fixed an issue which would cause the ghoul glow effect on the health bar to appear for non-ghoul player
+        characters.</li>
+    <li>Disguised ghouls can no longer wear apparel which could invalidate the disguise.</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Perks</div>
+<ul>
+    <li>Onslaught now has a HUD indicator.</li>
+    <li>Fixed Onslaught not respecting the stack limit and stacks now expire correctly, which is after 10 seconds of
+        not gaining stacks.</li>
+    <li>A help entry has been added for Onslaught.</li>
+    <li>Updated the help entry for V.A.T.S. to include information about Limb Targeting and Weakness/Resistance
+        being tied to the PER stat.</li>
+    <li>Added an option to disable the unopened Perk Card Pack prompt.</li>
+    <li>Ironclad
+        <ul>
+            <li>Ranks reduced from 5 to 3.</li>
+            <li>Now increases all resistances.</li>
+        </ul>
+    </li>
+    <li>Demolition Expert
+        <ul>
+            <li>Ranks reduced from 5 to 3.</li>
+            <li>Rank 2 increased from 20% to 40% Explosive Damage.</li>
+            <li>Rank 3 increased from 30% to 60% Explosive Damage.</li>
+            <li>Fixed an issue where Demolition Expert was increasing Turret damage instead of Home Defense.</li>
+            <li>Demolition Expert is no longer required to craft explosives.</li>
+        </ul>
+    </li>
+    <li>Home Defense
+        <ul>
+            <li>Now correctly increases Turret damage.</li>
+            <li>Damage bonus is +50/75/100%.</li>
+        </ul>
+    </li>
+    <li>Gun Runner
+        <ul>
+            <li>Now works with any ranged weapon.</li>
+        </ul>
+    </li>
+    <li>Modern Renegade
+        <ul>
+            <li>Now works with all small guns.</li>
+            <li>Chance to cripple has been replaced with increased limb damage.</li>
+        </ul>
+    </li>
+    <li>Crackshot
+        <ul>
+            <li>Now works with all small guns.</li>
+        </ul>
+    </li>
+    <li>Tank Killer
+        <ul>
+            <li>Now works with all small guns.</li>
+        </ul>
+    </li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">The Big Bloom</div>
+<ul>
+    <li>Beezlebub and Beezlebabies should no longer carry diseases.</li>
+    <li>The event's Overgrown should now properly reload their missile launchers.</li>
+</ul>
+<hr>
+<div class="update bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Ghoulification</div>
+<div class="paragraph">For the first time in Fallout history, YOU will be able to play as a Ghoul. Starting the new
+    questline “Leap of Faith” will take you into a new section of the Savage Divide. There you will meet characters
+    who will aid in your transformation. Unlocking the new Ghoul-specific abilities Glow and Feral as well as the
+    new Ghoul exclusive Perks.</div>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Ghoulities (Abilities)
+</div>
+<div class="paragraph"><strong>Feral</strong></div>
+<div class="paragraph">Becoming a Ghoul sheds the need to sate your hunger and thirst. Instead, you battle against a
+    gnawing desire to slip back into your base nature. Abandoning all sanity you might have had.</div>
+<div class="paragraph">The new Feral meter drains overtime and can only be filled back up by consuming Chems. You
+    may not want to keep that meter 100% filled though. Your Feral status provides different bonuses and penalties
+    depending on how full the meter is. </div>
+<ul>
+    <li>Above 80%: you gain +3 Strength, +3 Endurance, +30 Max HP</li>
+    <li>Above 60%: you gain +15 Max HP</li>
+    <li>Above 40%: you lose -1 Endurance and -5 Max HP</li>
+    <li>Above 20%: you lose -3 Endurance, -15 Max HP, -10 Max AP</li>
+    <li>At 0%: you gain +200% Melee Damage, and lose -5 Endurance, -30 Max HP, -20 Max AP, -300% Hip-fire Gun
+        Accuracy &amp; V.A.T.S. Accuracy (a few people on the team have been known to call it Ghoulzerker or
+        Ghoularian Mode)</li>
+</ul>
+<div class="paragraph"><strong>Glow</strong></div>
+<div class="paragraph">As you might expect when living life as a Ghoul, radiation doesn’t have the same effect on
+    you as it does on the smooth-skinned. You’re immune to diseases and cannot be mutated by nearby radiation. As a
+    Ghoul, radiation makes you Glow! </div>
+<div class="paragraph">This new Glow system increases your maximum health (and heals damage you’ve taken) based on
+    the amount of radiation that you’ve accumulated. Your Glow can be tracked by the green-striped pattern on your
+    HP bar.</div>
+<div class="paragraph">Consuming tainted foods, drinks, and exploring irradiated environments all contribute to your
+    Glow. If you hear that Pip-Boy ticking, the radiation is hitting. While you’re in Power Armor, your radiation
+    intake can be seen on the “Rads” dial next to your health. </div>
+<div class="paragraph">Outside of the max health increase Glow provides, it also contributes to Perks like the
+    Science Monster and Jaguar Speed Perks mentioned below! </div>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Gherks (Perks)</div>
+<div class="paragraph">One benefit of living life as a Ghoul is that you’ll have access to a new suite of Perk cards
+    that you can use in addition to the normal human cards . There are 28 Perks to choose from and 2 new Legendary
+    perks for Ghouls. </div>
+<div class="paragraph">The new Perk cards can be attained through Perk card packs or by selecting your level-up
+    Perk. These cards will open new build opportunities and enhance the way you play. </div>
+<div class="paragraph">Do note that Perk cards that revolve around Hunger, Thirst, and the Chem Resistant perk will
+    be locked as Ghouls don’t require the benefits that those cards provide. </div>
+<div class="paragraph">Let’s look at one Perk from each S.P.E.C.I.A.L. category (all Perk descriptions are at their
+    max value):</div>
+<ul>
+    <li>Strength:
+        <ul>
+            <li>Bone Shatterer – Your melee weapon attacks have a 45% chance to cripple a limb.</li>
+        </ul>
+    </li>
+    <li>Perception:
+        <ul>
+            <li>Eye of The Hunter – Your vision allows you to be more accurate in V.A.T.S. from a very long
+                distance.</li>
+        </ul>
+    </li>
+    <li>Endurance:
+        <ul>
+            <li>Glowing Gut - Irradiated food and drink grant 300% more rads.</li>
+        </ul>
+    </li>
+    <li>Charisma:
+        <ul>
+            <li>Moral Support – When on a team, you become feral 50% slower.</li>
+        </ul>
+    </li>
+    <li>Intelligence:
+        <ul>
+            <li>Science Monster – While you have Glow, gain 15% bonus damage for 10 seconds upon getting hit.</li>
+        </ul>
+    </li>
+    <li>Agility:
+        <ul>
+            <li>Jaguar Speed – You now sprint 20% faster when your Glow is high (Greater than or equal to 180 Glow).
+            </li>
+        </ul>
+    </li>
+    <li>Luck:
+        <ul>
+            <li>Wild West Hands – 36% chance to instantly reload your entire magazine when empty.</li>
+        </ul>
+    </li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">A Ghoul’s Day Out</div>
+<div class="paragraph">With all these new benefits that help you explore the wasteland; we would forgive you for
+    thinking that life as a Ghoul was easy. No matter how well dressed you are, there are still some factions (like
+    the Brotherhood of Steel) who won’t want to interact with you. </div>
+<div class="paragraph">Playing as a Ghoul will make some factions hostile to you which will lock you out of quest
+    lines. Luckily wearing disguises made by Jaye, a new NPC you’ll meet along the new questline, will allow you to
+    interact with any blocked content that you may find when living life as a Ghoul.</div>
+<div class="paragraph">There are a few trade-offs though:</div>
+<ul>
+    <li>Sprinting will cost 50% more AP</li>
+    <li>Feral Meter depletion rate is increased by 30</li>
+    <li>Movement speed is slightly slower</li>
+    <li>Super Overencumbrance (drastic AP drain and forced slow-walk)</li>
+</ul>
+<div class="paragraph">Don’t worry. If after a short while you find out that being a Ghoul isn’t for you, you can
+    switch back to being human through your Character Screen. Just know, this is a one-way ticket back. You won’t be
+    able to complete the questline to become a Ghoul again. </div>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">The Big Bloom</div>
+<div class="paragraph">Spring is coming and we wanted to introduce a new themed event to match. </div>
+<div class="paragraph">Introducing Black-Eyed Susan, a new friendly NPC who is sure to remind you of a grandmother.
+    She loves flowers, floral arrangements, and totally doesn’t have a secret backstory so stop asking. Susan needs
+    help with her latest project and luckily for her there are a bunch of Vault Dwellers who are ready and willing
+    to help. </div>
+<div class="paragraph">Black-Eyed Susan’s favorite meadow has been overtaken by strange, plant-like beasts called
+    Overgrown making the area too dangerous for her to pick flowers. So, she needs you to head into the meadow, pick
+    some flowers, and defeat those monsters. </div>
+<div class="paragraph">Do watch out for the mines though. They’re the remnants of a previous attempt to keep those
+    beasts out of her meadow. </div>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Perks Catalog</div>
+<div class="paragraph">The Perks Catalog is a new way of viewing and organizing your Perk card collection. It's
+    filterable, sortable, has 2 different views, and even lets you tag specific cards for search. Check it out by
+    opening your loadout and pressing the "All Perks" button on the left-hand side of your screen (LT on controller,
+    M on mouse &amp; keyboard). Let us know what you think! </div>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Combat Balancing</div>
+<div class="paragraph">Many pistols have been modified to incorporate the damage that they’d deal via perks
+    (pre-update Gunslinger and Guerrilla) into their base damage, since those perks no-longer offer a
+    pistol-specific increase to damage. In addition, some pistols have received a further increase to their base
+    damage. </div>
+<ul>
+    <li>Pipe Gun</li>
+    <li>Pipe Revolver</li>
+    <li>Pipe Bolt-Action</li>
+    <li>Laser Gun</li>
+    <li>Ultracite Laser Gun</li>
+    <li>Plasma Gun</li>
+    <li>Enclave Plasma Gun</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Weapon Damage Changes
+</div>
+<div class="paragraph">The base damage values listed here represent the weapon at its max level (45 or 50). Lower
+    levels have been adjusted proportionally.</div>
+<ul>
+    <li>10mm: 29 -&gt; 45</li>
+    <li>44 [Revolver]: 72 -&gt; 132</li>
+    <li>Alien Blaster: 37 -&gt; 59</li>
+    <li>Black Powder Pistol: 216 -&gt; 347</li>
+    <li>Crusader Pistol: 35 -&gt; 56</li>
+    <li>Circuit Breaker: 40 -&gt; 64</li>
+    <li>Salvaged Assaultron Head: 62 -&gt; 95</li>
+    <li>Western Revolver: 84 -&gt; 157</li>
+    <li>Gamma Gun: 60 -&gt; 85</li>
+    <li>Gauss Pistol: 115 -&gt; 195</li>
+    <li>Single Action Revolver: 82 -&gt; 184</li>
+    <li>Pipe Revolver: 70 -&gt; 85</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Weapon AP Cost Changes
+</div>
+<ul>
+    <li>Pipe Gun: 21 -&gt; 13
+        <ul>
+            <li>Note: This weapon no longer has reduced AP cost from automatic receivers.</li>
+        </ul>
+    </li>
+    <li>10mm: 20 -&gt; 15
+        <ul>
+            <li>Note: This weapon no longer has reduced AP cost from automatic receivers.</li>
+        </ul>
+    </li>
+    <li>Circuit Breaker: 20 -&gt; 16</li>
+    <li>44 [Revolver]: 35 -&gt; 20</li>
+    <li>Alien Blaster: 20 -&gt; 17</li>
+    <li>Crusader Pistol: 20 -&gt; 16</li>
+    <li>Combat Shotgun: 35 -&gt; 18</li>
+    <li>Western Revolver: 35 -&gt; 22</li>
+    <li>Double-Barrel Shotgun: 30 -&gt; 26</li>
+    <li>Cold Shoulder: 30 -&gt; 28</li>
+    <li>Gauss Pistol: 35 -&gt; 18</li>
+    <li>Plasma Gun: 25 -&gt; 16</li>
+    <li>Enclave Plasma Gun: 25 -&gt; 18</li>
+    <li>Gamma Gun: 30 -&gt; 18</li>
+    <li>Pipe Revolver: 25 -&gt; 16</li>
+    <li>Gunther’s Big Iron: 35 -&gt; 30</li>
+    <li>Gauss Shotgun: 35 -&gt; 24</li>
+    <li>Laser Gun: 25 -&gt; 16</li>
+    <li>Pump-Action Shotgun: 35 -&gt; 20</li>
+    <li>Single-Action Revolver: 35 -&gt; 24</li>
+    <li>Ultracite Laser Gun: 25 -&gt; 14</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Weapon VATS Critical
+    Damage Multiplier Changes</div>
+<div class="paragraph">These are the base VATS critical damage multipliers for each weapon. Mods, perks, and other
+    buffs can further increase these values.</div>
+<ul>
+    <li>10mm: 2.0 -&gt; 2.5
+        <ul>
+            <li>Note: Only while semi-automatic.</li>
+        </ul>
+    </li>
+    <li>Circuit Breaker: 2.0 -&gt; 2.75</li>
+    <li>44 [Revolver]: 2.0 -&gt; 2.75</li>
+    <li>Alien Blaster: 2.0 -&gt; 2.25</li>
+    <li>Black Powder Pistol: 2.0 -&gt; 2.75</li>
+    <li>Crusader Pistol: 2.0 -&gt; 2.5</li>
+    <li>Single-Action Revolver: 2.0 -&gt; 2.75</li>
+    <li>Salvaged Assaultron Head: 2.0 -&gt; 3.0</li>
+    <li>Western Revolver: 2.0 -&gt; 2.75</li>
+    <li>Gamma Gun: 2.0 -&gt; 2.75</li>
+    <li>Gauss Pistol: 2.0 -&gt; 2.75</li>
+    <li>Pipe Bolt-Action: 2.0 -&gt; 2.75</li>
+    <li>Pipe Gun: 2.0 -&gt; 2.5
+        <ul>
+            <li>Note: Only while semi-automatic.</li>
+        </ul>
+    </li>
+    <li>Pipe Revolver: 2.0 -&gt; 2.75</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Weapon Sneak Damage
+    Multiplier Changes</div>
+<div class="paragraph">These are the base VATS critical damage multipliers for each weapon. Mods and perks can
+    further increase these values.</div>
+<ul>
+    <li>10mm: 2.0 -&gt; 2.5</li>
+    <li>Alien Blaster: 2.0 -&gt; 2.25</li>
+    <li>Crusader Pistol: 2.0 -&gt; 2.5</li>
+    <li>Pipe Bolt-Action: 2.0 -&gt; 2.75</li>
+    <li>Pipe Gun: 2.0 -&gt; 2.5</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Legendary Mods</div>
+<ul>
+    <li>Arms Keeper's
+        <ul>
+            <li>No longer applies to grenades.</li>
+        </ul>
+    </li>
+    <li>Furious
+        <ul>
+            <li>This effect is now considered Onslaught (+5% damage per stack, +9 max stacks) and stacks with the
+                new Gunslinger and Guerrilla Perks.</li>
+        </ul>
+    </li>
+    <li>Onslaught description: Each consecutive hit against the same target grants a stack of Onslaught. All stacks
+        expire once 10 seconds have passed or the player hits a new target. Players have an initial limit of 0 and
+        can increase this through Perks and Items. The effects granted per stack can also be modified by Perks and
+        Items.
+        <ul>
+            <li>Onslaught is a temporary name</li>
+        </ul>
+    </li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Power Armor</div>
+<ul>
+    <li>Now grants +10 STR regardless of your current STR.</li>
+    <li>Inspecting and previewing Power Armor now correctly shows the parts attached to it. In addition, the inspect
+        menu now displays the contents of the chassis.</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Ammo</div>
+<ul>
+    <li>Plasma and Ultracite Cores now display their charge value.</li>
+    <li>Fully charged Fusion, Plasma, and Ultracite Cores can now be placed in the Ammo Box.</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Perks</div>
+<ul>
+    <li>Adjusted some Perk names for better alphabetical sorting.</li>
+    <li>Arms Keeper
+        <ul>
+            <li>Ranks reduced from 3 to 2.</li>
+            <li>Rank 2 increased to 75%.</li>
+            <li>Now applies to all weapons, except grenades.</li>
+        </ul>
+    </li>
+    <li>Awareness
+        <ul>
+            <li>New Effect: Gain more VATS accuracy based on PER.</li>
+            <li>The effect of seeing weaknesses in VATS is now tied to having at least 10 PER.</li>
+        </ul>
+    </li>
+    <li>Barbarian
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Gain Damage Resistance based on your STR. Doubled when not wearing armor.</li>
+        </ul>
+    </li>
+    <li>Bodyguards
+        <ul>
+            <li>Ranks reduced from 4 to 1.</li>
+            <li>New Effect: Gain Damage &amp; Energy Resistance based on your CHA per teammate.</li>
+        </ul>
+    </li>
+    <li>Can Do!
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Find more packaged food based on LCK.</li>
+        </ul>
+    </li>
+    <li>Concentrated Fire
+        <ul>
+            <li>No longer grants limb targeting. This is now acquired by having at least 5 PER.</li>
+            <li>Fixed the damage bonus not increasing per shot.</li>
+            <li>The per shot effects are now limited to 20 stacks.</li>
+        </ul>
+    </li>
+    <li>Field Surgeon
+        <ul>
+            <li>Moved to INT.</li>
+        </ul>
+    </li>
+    <li>Gun Fu
+        <ul>
+            <li>Fixed an issue where Gun Fu was doing much more damage than intended.</li>
+            <li>Increased the damage buff from 10, 30, 60 to 30, 60, 90.</li>
+        </ul>
+    </li>
+    <li>Good With Salt
+        <ul>
+            <li>Ranks reduced from 3 to 2.</li>
+            <li>Rank 1 now reduces spoilage by 45%.</li>
+            <li>Rank 2 now reduces spoilage by 90%.</li>
+        </ul>
+    </li>
+    <li>Guerrilla
+        <ul>
+            <li>New Effect: Each rank adds ranged damage to close enemies.</li>
+        </ul>
+    </li>
+    <li>Guerrilla Expert
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Rank 1 now costs 2 Perk Points.</li>
+            <li>New Effect: Gain +5% reload speed per Onslaught stack with ranged weapons, +3 max stacks.</li>
+        </ul>
+    </li>
+    <li>Guerrilla Master
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Rank 1 now costs 3 Perk Points.</li>
+            <li>New Effect: Gain +3% damage to close enemies per Onslaught stack with ranged weapons, +3 max stacks.
+            </li>
+        </ul>
+    </li>
+    <li>Gunslinger
+        <ul>
+            <li>New Effect: Each rank adds ranged damage to weak spots.</li>
+        </ul>
+    </li>
+    <li>Gunslinger Expert
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Rank 1 now costs 2 Perk Points.</li>
+            <li>New Effect: Gain +3% fire rate per Onslaught stack with ranged weapons, +3 max stacks.</li>
+        </ul>
+    </li>
+    <li>Gunslinger Master
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Rank 1 now costs 3 Perk Points.</li>
+            <li>New Effect: Gain +3% damage to weak spots per Onslaught stack with ranged weapons, +3 max stacks.
+            </li>
+        </ul>
+    </li>
+    <li>Inspirational
+        <ul>
+            <li>New Effect: You and nearby players gain more XP. This effect scales with CHA. -10 Max AP per Rank.
+            </li>
+            <li>Dev Note: This new effect applies to all players, not just your teammates.</li>
+        </ul>
+    </li>
+    <li>Ironclad
+        <ul>
+            <li>New Effect: Armor provides 5% more protection per rank. Double if wearing a matching set.</li>
+        </ul>
+    </li>
+    <li>Lead Belly
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Less Rads from food &amp; drink based on END.</li>
+        </ul>
+    </li>
+    <li>Mr. Sandman
+        <ul>
+            <li>Removed the “at night” requirement.</li>
+        </ul>
+    </li>
+    <li>Pack Rat
+        <ul>
+            <li>Ranks reduced from 3 to 2.</li>
+            <li>Rank 2 increased to 75%.</li>
+        </ul>
+    </li>
+    <li>Packin’ Light
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Your Action Points regenerate faster when not encumbered.</li>
+        </ul>
+    </li>
+    <li>Pharma Farma
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Find more healing chems based on LCK.</li>
+        </ul>
+    </li>
+    <li>Portable Power
+        <ul>
+            <li>Ranks reduced from 3 to 2.</li>
+            <li>Moved from INT to STR.</li>
+            <li>Rank 2 increased to 75%.</li>
+        </ul>
+    </li>
+    <li>Rad Resistant
+        <ul>
+            <li>Ranks reduced from 4 to 1.</li>
+            <li>Rank 1 now costs 2 points.</li>
+            <li>New Effect: Gain Radiation Resistance based on your END.</li>
+        </ul>
+    </li>
+    <li>Rejuvenated
+        <ul>
+            <li>Increased bonus at Rank 1.</li>
+            <li>Rank 2 now has an additional bonus while not heavily irradiated.</li>
+        </ul>
+    </li>
+    <li>Scrounger
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>New Effect: Find more ammo based on LCK.</li>
+            <li>Dev Note: All 3 “searching” Perks have a chance based on LCK to grant a bonus item in certain
+                contexts, such as a medical box or ammo box. In addition, these Perks increase the quantity found
+                from all regular loot sources based on LCK.</li>
+            <div class="miner-note"><strong>Miner Note</strong>:</div>
+        </ul>
+    </li>
+    <li>Spiritual Healer
+        <ul>
+            <li>New Effect: You and nearby players regenerate health. This effect scales with CHA. -10 Max AP per Rank.</li>    
+            <div class="miner-note"><strong>Miner Note</strong>:<br />This perk does not reduce your Max AP<br />This perk applies to all players, not just your teammates<br />The radius of this effect is roughly 4 / 12.5 / 21 CAMP foundations at ranks 1 / 2 / 3<br />Your self healing is different than than the healing of nearby players, scaling is listed below<hr>At 1 / 15 / 30 / 60 / 100 CHR<br />You restore 0.25 / 0.5 / 0.75 / 0.8 / 1 HP/s<br />Nearby players restore 1 / 2 / 2.5 / 2.8 / 3 HP/s</div>
+        </ul>
+    </li>
+    <li>Strong Back
+        <ul>
+            <li>Ranks reduced from 4 to 1.</li>
+            <li>Rank 1 now costs 2 Perk Points.</li>
+            <li>New Effect: Gain more carry weight based on your STR.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: +10 / 40 / 65 / 85 / 100 carry weight at 1 / 15 / 30 / 60 / 100 STR<br />Magnitude scales linearly between listed SPECIAL values</div>    
+        </ul>
+    </li>
+    <li>Tenderizer
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Rank 1 now costs 2 points.</li>
+            <li>New Effect: Each attack makes your target take 0.1% increased damage.</li>
+            <li>Dev Note: Each player using Tenderizer contributes to a stacking effect that does not expire and
+                caps out at 100% increased damage. This does not work in PvP.</li>
+        </ul>
+    </li>
+    <li>Traveling Pharmacy
+        <ul>
+            <li>Ranks reduced from 3 to 2.</li>
+            <li>Rank 1 increased to 45%.</li>
+            <li>Rank 2 increased to 90%.</li>
+        </ul>
+    </li>
+    <li>Wrecking Ball
+        <ul>
+            <li>Ranks reduced from 3 to 1.</li>
+            <li>Moved from INT to STR.</li>
+            <li>New Effect: You deal +100% damage to objects and can damage your own C.A.M.P. objects.</li>
+        </ul>
+    </li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Known Issues</div>
+<div class="paragraph"><strong>Big Bloom</strong></div>
+<ul>
+    <li>Fire effects on the following weapons are not counting towards the "Set the Overgrown on fire" objective.
+        <ul>
+            <li>Auto Axe</li>
+            <li>Laser Gun</li>
+            <li>Plasma Gun</li>
+            <li>Regular Bow</li>
+            <li>Crossbow</li>
+            <li>Gatling Laser</li>
+            <li>Gatling Plasma</li>
+        </ul>
+    </li>
+    <li>Anything planted in the ceramic flower pots will not be positioned correctly. expect some floating and
+        clipping.</li>
+    <li>Gamma Green Tea duration time is not displaying in the inspect menu.</li>
+    <li>Some Big Bloom recipes will leave their "Crafting Item Unlocked" message on screen until relog</li>
+    <li>You may hear music overlapping during the event.</li>
+</ul>
+<div class="paragraph"><strong>Player Ghoul</strong> </div>
+<ul>
+    <li>The ability to change back to Human from Ghoul is currently disabled.</li>
+    <li>Debug Text is displayed in Stats window of Pip-Boy for Feral status.</li>
+    <li>Ghoul face textures may incorrectly load after waking up during character creation.</li>
+    <li>The "Complexion" setting is currently not changing skin textures as expected.</li>
+    <li>Relogging may cause issues with Ghoul neck textures.</li>
+    <li>Human characters will see a Green outline around their health bar.</li>
+</ul>
+<div style="height: 20px;"></div>
+<a href="https://discord.gg/fo76datamining" style="color: inherit; text-decoration: none" target="_blank">
+    <div class="footer bar">
+        <img style="width: 5em; height: 5em; margin-right: 1em;" src="Dataminers Watermark.png"
+            alt="Fallout 76 Dataminers logo">
+        <div style="display: inline-block">
+            <h1>.gg/fo76datamining</h1>
+        </div>
+    </div>
+</a>
+<script src="index.js" type="text/javascript"></script>
+
+</html>
