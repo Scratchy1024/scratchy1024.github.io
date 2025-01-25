@@ -449,13 +449,13 @@
         <ul>
             <li>Ranks reduced from 3 to 1.</li>
             <li>Rank 1 now costs 3 Perk Points.</li>
-            <li>New Effect: Gain +3% damage to close enemies per Onslaught stack with ranged weapons, +3 max stacks.
-            </li>
+            <li>New Effect: Gain +3% damage to close enemies per Onslaught stack with ranged weapons, +3 max stacks.</li>
         </ul>
     </li>
     <li>Gunslinger
         <ul>
             <li>New Effect: Each rank adds ranged damage to weak spots.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: +10% / 15% / 20% increase to a limb's weak point multiplier at ranks 1 / 2 / 3<br />Note, increase is multiplicative to a limb's weak point multiplier, not additive.<br /> For example, a 1.5x weak point mult would be increased as follows with Gunslinger 3: <div class="formID">1.5 * 1.2 = 1.8</div> and NOT <div class="formID">1.5 + 0.2 = 1.7</div> </div>
         </ul>
     </li>
     <li>Gunslinger Expert
@@ -478,6 +478,7 @@
             <li>New Effect: You and nearby players gain more XP. This effect scales with CHA. -10 Max AP per Rank.
             </li>
             <li>Dev Note: This new effect applies to all players, not just your teammates.</li>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />This perk does not reduce your Max AP<br />The radius of this effect is roughly 4 / 12.5 / 21 CAMP foundations at ranks 1 / 2 / 3<br />Your XP bonus is different from than the XP bonus of nearby players, scaling is listed below<hr>At 1 / 15 / 30 / 60 / 100 CHR<br />You gain 3% / 10% / 15% / 18% / 20% more XP<br />Nearby players gain 10% / 30% / 45% / 54% / 60% more XP<br />Magnitude scales linearly between listed SPECIAL values</div>
         </ul>
     </li>
     <li>Ironclad
@@ -489,6 +490,7 @@
         <ul>
             <li>Ranks reduced from 3 to 1.</li>
             <li>New Effect: Less Rads from food &amp; drink based on END.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: 18 / 61 / 96 / 131 / 175 rad ingestion resisance at 1 / 15 / 30 / 60 / 100 END<br />Magnitude scales linearly between listed SPECIAL values</div>
         </ul>
     </li>
     <li>Mr. Sandman
@@ -512,6 +514,24 @@
         <ul>
             <li>Ranks reduced from 3 to 1.</li>
             <li>New Effect: Find more healing chems based on LCK.</li>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />Applicable containers:
+                <ul>
+                    <li>Government Aid Drops (All types)</li>
+                    <li>Bathroom Mirrors</li>
+                    <li>Chem Coolers/Boxes</li>
+                    <li>Doctor's Bags</li>
+                    <li>First Aid Boxes</li>
+                </ul>
+                Likely will be bugfixed to apply to corpses<br />Activation rates:
+                <ul>
+                    <li>20% chance between 1 and 14 LCK</li>
+                    <li>40% chance between 15 and 29 LCK</li>
+                    <li>60% chance between 30 and 59 LCK</li>
+                    <li>90% chance between 60 and 99 LCK</li>
+                    <li>100% chance at 100 LCK</li>
+                </ul>
+                See: <div class="formID">LL_Perk_PharmaFarma [LVLI:0059E85D]</div>
+            </div>
         </ul>
     </li>
     <li>Portable Power
@@ -526,12 +546,103 @@
             <li>Ranks reduced from 4 to 1.</li>
             <li>Rank 1 now costs 2 points.</li>
             <li>New Effect: Gain Radiation Resistance based on your END.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: +18 / 61 / 96 / 131 / 175 rad resist at 1 / 15 / 30 / 60 / 100 END<br />Magnitude scales linearly between listed SPECIAL values</div>
         </ul>
     </li>
     <li>Rejuvenated
         <ul>
             <li>Increased bonus at Rank 1.</li>
             <li>Rank 2 now has an additional bonus while not heavily irradiated.</li>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />Rank 2 is only active when a player has < 100 rads<br />Effects table:<thead>
+                <style type="text/css">
+                    .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+                    .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+                      font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+                      font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg .tg-m27v{background-color:#eee8d5;border-color:#000000;font-weight:bold;text-align:left;vertical-align:bottom}
+                    .tg .tg-mqkk{background-color:#eee8d5;border-color:#000000;text-align:center;vertical-align:bottom}
+                    .tg .tg-ljam{border-color:#000000;text-align:center;vertical-align:bottom}
+                    .tg .tg-axh8{background-color:#eee8d5;border-color:#000000;text-align:left;text-decoration:underline;vertical-align:bottom}
+                    .tg .tg-kvxc{border-color:#000000;text-align:left;vertical-align:bottom}
+                    .tg .tg-jdb5{border-color:#000000;font-weight:bold;text-align:center;vertical-align:bottom}
+                    .tg .tg-nf9m{background-color:#eee8d5;border-color:#000000;text-align:left;vertical-align:bottom}
+                    </style>
+                    <table class="tg"><thead>
+                      <tr>
+                        <th class="tg-kvxc"></th>
+                        <th class="tg-jdb5" colspan="3">Well Fed</th>
+                        <th class="tg-jdb5" colspan="3">Well Hydrated</th>
+                      </tr></thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-m27v">Live</td>
+                        <td class="tg-axh8">STR</td>
+                        <td class="tg-axh8">HP</td>
+                        <td class="tg-axh8">Disease Resist</td>
+                        <td class="tg-axh8">END</td>
+                        <td class="tg-axh8">AP Regen</td>
+                        <td class="tg-axh8">Disease Resist</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-kvxc">No Perk</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">35</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-nf9m">Rank 1</td>
+                        <td class="tg-mqkk">1</td>
+                        <td class="tg-mqkk">40</td>
+                        <td class="tg-mqkk">40</td>
+                        <td class="tg-mqkk">1</td>
+                        <td class="tg-mqkk">40</td>
+                        <td class="tg-mqkk">40</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-kvxc">Rank 2</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">45</td>
+                        <td class="tg-ljam">45</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">45</td>
+                        <td class="tg-ljam">45</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-m27v">PTS</td>
+                        <td class="tg-mqkk" colspan="6"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-kvxc">No Perk</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">1</td>
+                        <td class="tg-ljam">35</td>
+                        <td class="tg-ljam">35</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-nf9m">Rank 1</td>
+                        <td class="tg-mqkk">2</td>
+                        <td class="tg-mqkk">45</td>
+                        <td class="tg-mqkk">40</td>
+                        <td class="tg-mqkk">2</td>
+                        <td class="tg-mqkk">45</td>
+                        <td class="tg-mqkk">40</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-kvxc">Rank 2</td>
+                        <td class="tg-ljam">4</td>
+                        <td class="tg-ljam">60</td>
+                        <td class="tg-ljam">45</td>
+                        <td class="tg-ljam">4</td>
+                        <td class="tg-ljam">60</td>
+                        <td class="tg-ljam">45</td>
+                      </tr>
+                    </tbody></table>
         </ul>
     </li>
     <li>Scrounger
@@ -541,13 +652,28 @@
             <li>Dev Note: All 3 “searching” Perks have a chance based on LCK to grant a bonus item in certain
                 contexts, such as a medical box or ammo box. In addition, these Perks increase the quantity found
                 from all regular loot sources based on LCK.</li>
-            <div class="miner-note"><strong>Miner Note</strong>:</div>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />
+                Applicable containers:
+                <ul>
+                    <li>Ammo Boxes</li>
+                    <li>Duffle Bags</li>
+                </ul>
+                Likely will be bugfixed to apply to corpses<br />Activation rates:
+            <ul>
+                <li>20% chance between 1 and 14 LCK</li>
+                <li>40% chance between 15 and 29 LCK</li>
+                <li>60% chance between 30 and 59 LCK</li>
+                <li>85% chance between 60 and 99 LCK</li>
+                <li>100% chance at 100 LCK</li>
+            </ul>
+            See: <div class="formID">LL_Perk_Scrounger [LVLI:005A1121]</div>
+            </div>
         </ul>
     </li>
     <li>Spiritual Healer
         <ul>
             <li>New Effect: You and nearby players regenerate health. This effect scales with CHA. -10 Max AP per Rank.</li>    
-            <div class="miner-note"><strong>Miner Note</strong>:<br />This perk does not reduce your Max AP<br />This perk applies to all players, not just your teammates<br />The radius of this effect is roughly 4 / 12.5 / 21 CAMP foundations at ranks 1 / 2 / 3<br />Your self healing is different than than the healing of nearby players, scaling is listed below<hr>At 1 / 15 / 30 / 60 / 100 CHR<br />You restore 0.25 / 0.5 / 0.75 / 0.8 / 1 HP/s<br />Nearby players restore 1 / 2 / 2.5 / 2.8 / 3 HP/s</div>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />This perk does not reduce your Max AP<br />This perk applies to all players, not just your teammates<br />The radius of this effect is roughly 4 / 12.5 / 21 CAMP foundations at ranks 1 / 2 / 3<br />Your self healing is different than the healing of nearby players, scaling is listed below<hr>At 1 / 15 / 30 / 60 / 100 CHR<br />You restore 0.25 / 0.5 / 0.75 / 0.8 / 1 HP/s<br />Nearby players restore 1 / 2 / 2.5 / 2.8 / 3 HP/s<br />Magnitude scales linearly between listed SPECIAL values</div>
         </ul>
     </li>
     <li>Strong Back
