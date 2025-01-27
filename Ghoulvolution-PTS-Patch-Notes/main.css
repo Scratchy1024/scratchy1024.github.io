@@ -123,6 +123,7 @@ body {
 }
 .hr-sect {
   font-family: futura-pt, sans-serif;
+  font-size: larger;
   font-weight: 700;
   display: flex;
   flex-basis: 100%;
