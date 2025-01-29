@@ -38,7 +38,7 @@
         <ul>
             <li><strong>New Effect</strong>: Gain <strong>Onslaught</strong> stacks over time and spend them on
                 attacks, +10 max stacks.</li>
-            <div class="miner-note"><strong>Miner Note</strong>:<br />Replenishes 1 stack per second<br />Spends 1 stack <u>per enemy hit</u></div>
+            <div class="miner-note"><strong>Miner Note</strong>:<br />Replenishes 1 stack per second<br />Spends 1 stack <u>per enemy hit</u><br />Multi-projectile weapons spend stacks per projectile hit, for example, an 8 pellet shotgun would spend 8 stacks if all pellets hit</div>
         </ul>
     </li>
     <li>Gun Runner
@@ -132,6 +132,7 @@
         not gaining stacks.</li>
     <li>A help entry has been added for Onslaught.</li>
     <div class="miner-note"><strong>Help Entry</strong>:<br />Onslaught is a stacking buff found on Perks and items. By default, attacks against the same target within a short time period generate Onslaught stacks. Waiting too long or attacking a different target will reset the stack count back to 0. The benefits you gain from each stack varies by the Perks and items you have equipped. Some Perks can even change how you gain and lose Onslaught stacks.</div>
+    <div class="miner-note"><strong>Miner Note</strong>: As of the 11/24 patch, Onslaught no longer expires upon attacking a different target</div>
     <li>Updated the help entry for V.A.T.S. to include information about Limb Targeting and Weakness/Resistance
         being tied to the PER stat.</li>
     <li>Added an option to disable the unopened Perk Card Pack prompt.</li>
@@ -154,11 +155,13 @@
         <ul>
             <li>Now correctly increases Turret damage.</li>
             <li>Damage bonus is +50/75/100%.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Stacks multiplicatively with Backwoodsman 10</div>
         </ul>
     </li>
     <li>Gun Runner
         <ul>
             <li>Now works with any ranged weapon.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Movement speed is capped at +20%</div>
         </ul>
     </li>
     <li>Modern Renegade
@@ -171,11 +174,13 @@
     <li>Crackshot
         <ul>
             <li>Now works with all small guns.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Pretty huge buff for shotguns</div>
         </ul>
     </li>
     <li>Tank Killer
         <ul>
             <li>Now works with all small guns.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Pretty huge buff for shotguns</div>
         </ul>
     </li>
 </ul>
@@ -368,7 +373,9 @@
         <strong>Rad-Reaver</strong>
         <ul>
             <li>Dealing non-automatic melee damage provides a small amount of Glow.</li>
-            <li>Applies 15 rads to the player on hit</li>
+            <li>Applies 15 rads to the player per enemy hit</li>
+            <div class="miner-note"><strong>Neither Hack n Slash, nor throwing weapons, proc Rad-Reaver</strong>:</div>
+            
         </ul>
     </div>
     <h2 style="background-color:#66ACB7;padding:10px;border-radius:10px;">Endurance</h2>
@@ -390,6 +397,7 @@
         <ul>
             <li>You take 3% / 6% / 10% less damage from Ballistic attacks. (No Power Armor) at ranks 1 / 2 / 3</li>
             <li>Reduces damage from all ballistic weapons, regardless of damage type</li>
+            <li>Whether or not a weapon is ballistic can be found in the inspect menu, at the bottom</li>
         </ul>
     </div>
     <h2 style="background-color:#C58B4C;padding:10px;border-radius:10px;">Charisma</h2>
@@ -437,6 +445,8 @@
         <ul>
             <li>Expending Glow makes your thrown grenades' deal +20% / 35% / 50% damage at ranks 1 / 2 / 3</li>
             <li>Expends 50 Glows <strong>per enemy hit</strong>, can be reduced by the Legendary Perk Feral Rage</li>
+            <li>Stacks additively with Demo Expert and Explosive Bobbleheads</li>
+            <li>Does not increase the damage of thrown melee weapons, despite draining glow</li>
         </ul>
         <strong>Mad Scientist</strong>
         <ul>
@@ -480,6 +490,7 @@
         <ul>
             <li>You now sprint 10% / 20% faster when your Glow is high at ranks 1 / 2</li>
             <li>Perk is active when Glows are above 180</li>
+            <li>Movement speed is capped at +20%</li>
         </ul>
     </div>
     <h2 style="background-color:#A19AAC;padding:10px;border-radius:10px;">Luck</h2>
@@ -693,6 +704,9 @@
         <ul>
             <li>Onslaught is a temporary name</li>
         </ul>
+        <div class="miner-note"><strong>Miner Note</strong>: A breakdown of Onslaught can be found here on the wiki: <a href="https://fallout.fandom.com/wiki/Onslaught_(Fallout_76)">https://fallout.fandom.com/wiki/Onslaught_(Fallout_76)</a></div>
+        <div class="miner-note"><strong>Miner Note</strong>: As of the 11/24 patch, Onslaught no longer expires upon attacking a different target</div>
+        <div class="miner-note"><strong>Miner Note</strong>: Onslaught stacks per projectile, so an 8 pellet shotgun would generate 8 stacks, if every pellet hit</div> 
     </li>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Power Armor</div>
@@ -767,6 +781,11 @@
     <li>Concentrated Fire
         <ul>
             <li>No longer grants limb targeting. This is now acquired by having at least 5 PER.</li>
+            <div class="miner-note"><strong>Help Entry</strong>:<br />Targeting Body Parts<br /><br />
+                Having 5 or more Perception will allow you to select specific body parts.<br />
+                Use the mouse wheel to select body parts on your current V.A.T.S. target. The bar below the percentage chance to hit number represents that body part's Health. Once the b  ar is empty, that body part will become crippled.<br /><br />
+                Weakness and Resistance<br /><br />
+                Having 10 or more Perception will allow you to see specific weakness and resistances of your target.</div>
             <li>Fixed the damage bonus not increasing per shot.</li>
             <li>The per shot effects are now limited to 20 stacks.</li>
             <div class="miner-note"><strong>Miner Note</strong>: 5 PER requirement has been lowered to 3 PER, in-game
@@ -830,14 +849,15 @@
             <li>Ranks reduced from 3 to 1.</li>
             <li>Rank 1 now costs 2 Perk Points.</li>
             <li>New Effect: Gain +3% fire rate per Onslaught stack with ranged weapons, +3 max stacks.</li>
+            <li>Effect changed in 1/24 patch, now +1% weak point damage per stack<./li>
         </ul>
     </li>
     <li>Gunslinger Master
         <ul>
             <li>Ranks reduced from 3 to 1.</li>
             <li>Rank 1 now costs 3 Perk Points.</li>
-            <li>New Effect: Gain +3% damage to weak spots per Onslaught stack with ranged weapons, +3 max stacks.
-            </li>
+            <li>New Effect: Gain +3% damage to weak spots per Onslaught stack with ranged weapons, +3 max stacks.</li>
+            <li>Effect changed in 1/24 patch, now passively generates Onslaught stacks.</li>
         </ul>
     </li>
     <li>Inspirational
@@ -1193,7 +1213,18 @@
     <li>Human characters will see a Green outline around their health bar.</li>
 </ul>
 
-<div class="update article-el-h3">DSJ's P58 PTS ATX/SCORE Datamines</div>
+<div class="update article-el-h3">Misc Changes</div>
+<div class="paragraph">
+    <ul>
+        <li>The Speed Demon mutation now increases ferality rate</li>
+        <li>The Cauterizer can be modded with a Dual Bar (texture is still missing at this time)</li>
+        <li>Tesla Cannon plans have been added to Mortimer (Raider reputation of Ally is required to purchase)</li>
+        <li>Vulcan Ultracite bracers now additively stack when two are equipped</li>
+        <li>Glowing Bobbleheads have a chance to be found in the world or rewarded from Mystery Bobblehead Boxes (Glowing Bobbleheads function identically to normal bobbleheads)</li>
+    </ul>
+</div>
+
+<div class="article-el-h3">DSJ's P58 PTS ATX/SCORE Datamines</div>
 <div class="paragraph">Datamined storefronts for upcoming Scoreboard and Atomic Shop Content: 
     <ul>
         <li><a href="https://imgur.com/a/FivPgYK" target="_blank">Fallout 76 Patch 58 SCORE Datamine</a></li>
@@ -1201,7 +1232,8 @@
         <li><a href="https://imgur.com/a/JTlefGL" target="_blank">P58 PTS 1/24 ATX/SCORE Datamine</a></li>
     </ul>
 </div>
-<div class="        article-el-h3">New Crafting Bench: Cannery</div>
+
+<div class="article-el-h3">New Crafting Bench: Cannery</div>
 <div class="paragraph">Cans consumables so they no longer spoil, see the linked article for more details:
     <ul>
         <li><a href="https://nukaknights.com/articles/pts-datamining-new-workbench-cannery-.html" target="_blank">PTS Datamining: New Workbench "Cannery"</a></li>
@@ -1217,6 +1249,7 @@
         </div>
     </div>
 </a>
+
 <script src="index.js" type="text/javascript"></script>
 
 </html>
