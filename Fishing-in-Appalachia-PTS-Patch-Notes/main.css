@@ -228,6 +228,17 @@ div.gallery img {
   height: auto;
 }
 
+div.image {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.image img {
+  width: 100%;
+  height: auto;
+}
+
 div.desc {
   text-align: center;
 }
