@@ -23,7 +23,25 @@
     <li>Adjusted the Tenderizer Salty and Peppered mods:
         <ul>
             <li>Salty now adds Armor Penetration.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Mod effects
+                <ul>
+                    <li>+20% Value</li>
+                    <li>+15% Weight</li>
+                    <li>+25% Armor Penetration</li>
+                    <li>-15% Durability</li>
+                    <li>+25% Additive Damage bonus</li>
+                </ul>
+            </div>
             <li>Peppered adds Limb Damage.</li>
+                <div class="miner-note"><strong>Miner Note</strong>: Mod effects
+                <ul>
+                    <li>+20% Value</li>
+                    <li>+15% Weight</li>
+                    <li>+25% Limb Damage</li>
+                    <li>-15% Durability</li>
+                    <li>+25% Additive Damage bonus</li>
+                </ul>
+            </div>
         </ul>
     </li>
 </ul>
@@ -32,6 +50,7 @@
     <li>Rad Sponge point cost was increased to 2.</li>
     <li>Fixed an issue with Grim Reapers Spring that caused it to not work on every kill.</li>
     <li>Fixed an issue with Kneecapper and Heavy Hitter's that caused them to not operate as they were described.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: The "Blunt" weapon requirement was not removed in the 7/25 patch as-advertised</div>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Workshop</div>
 <div class="paragraph">Over the course of this PTS we’ve rolled out a lot of changes to help give the new Workshop UI a solid foundation for all C.A.M.P. builders in the Wasteland. Today's update includes some behind-the-scenes updates, in addition to what's below, to make sure things are solid.</div>
@@ -65,12 +84,20 @@
 <ul>
     <li>Revert a couple of unintended health changes for the Ultragenetic Deathclaw and Ultragenetic Mole Miner Stalker (Raids)</li>
     <li>Increased the health and resistances of the EN06 Guardian (Raids)</li>
+    <div class="miner-note"><strong>Miner Note</strong>:<br />Health increased from 544,599 to 641,055<br />Resists increased from 341 DR / 169 ER / 341 CR / 227 FR to 415 DR / 227 ER / 442 CR / 279 FR</div>
     <li>Removed Poison damage immunity from Super Mutants and Robobrains
         <ul>
             <li>Super mutants are still highly resistant to Poison damage.</li>
         </ul>
     </li>
     <li>Adjusted Super Mutant resistances.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Adjusted resists relative to live
+        <div class="gallery">
+            <a target="_blank" href="Super_Mutants_Resist_Curves.png">
+                <img src="Super_Mutants_Resist_Curves.png" width="10%">
+            </a>
+        </div>
+    </div>
 </ul>
 <div class="paragraph"><strong>Mod Changes</strong></div>
 <ul>
@@ -78,6 +105,7 @@
     <li>Fixed the range and ammo capacity for the Cryolator's Crystallizing Barrel mod.</li>
     <li>The Minigun Shredder mod no-longer benefits from the Radioactive Strength perk.</li>
     <li>Removed an unintended damage bonus from the Laser Gun and Ultracite Laser Gun Aligned Automatic Barrel mods.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Weapons had an erroneous extra +25% additive damage bonus</div>
     <li>Fixed missing Cryo damage on the Freezing mod for the Electro Enforcer</li>
     <li>Mods which convert weapons from semi-auto to automatic:
         <ul>
@@ -114,7 +142,9 @@
     <li>Fixed an issue where the Gamma Gun Deep Dish mod projectile didn't deal Radiation damage.</li>
     <li>Addressed some inconsistencies with how Pipe Syringer mods changed the weapon's range.</li>
     <li>Increased the speed of the Plasma Caster projectile by 30%.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 10000 to 13000</div>
     <li>Increased the speed of the Alien Disintegrator High-Powered Receiver projectile by 100%.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 4000 to 8000</div>
     <li>Re-implemented fix for Crossbow Prime Receiver range.</li>
     <li>Fixed a missing damage increase for the Flamer (32 -&gt; 42).</li>
     <li>Fixed an issue with Laser Splitter mods where they increased damage more than intended.</li>
@@ -277,9 +307,10 @@
     <li>Grim Reapers Sprint
         <ul>
             <li>Now a single rank that scales with luck. The effect now always restores AP on kill in VATS. The amount restored is based on your Luck and Max AP.</li>
-            <li>Lockpick and Hacking perks have had the Expert and Master prefix moved to be a suffix so that they sort next to each other alphabetically.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Restores 6/14/20/36 AP at 1/15/30/60/100 Luck</div>
         </ul>
     </li>
+    <li>Lockpick and Hacking perks have had the Expert and Master prefix moved to be a suffix so that they sort next to each other alphabetically.</li>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Weapons</div>
 <ul>
@@ -290,6 +321,7 @@
     <li>Ammo crafting categories are now sorted together.</li>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Workshop</div>
+<br />
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h4">General Fixes</div>
 <ul>
     <li>Fixed a bug that allowed scrapping when no item was selected.</li>
@@ -385,14 +417,56 @@
 </ul>
 <div class="paragraph"><strong>Mod Changes:</strong></div>
 <ul>
+
     <li>"True" mods now primarily improve crouching and sighted aim for weapons (highest overall precision).</li>
     <li>"Stabilized" mods now increase the ability to use a weapon accurately while moving but benefit less from crouching and ADS.</li>
     <li>"Aligned" mods now increase V.A.T.S. hit chance and reduce AP cost.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: <div class="column-container">
+            <div class="column">
+                <div class="paragraph"><strong>True</strong></div>
+                <ul>
+                    <li>+20% Value</li>
+                    <li>+15% Weight</li>
+                    <li>-15% Min Recoil</li>
+                    <li>+10% Cone of Fire Increase Per Shot</li>
+                    <li>+15% AimModelRecoilDiminishSightsMult</li>
+                    <li>-25% Shots till Max Recoil</li>
+                    <li>+15% tighter Cone of Fire while in ADS</li>
+                    <li>-5% Durability</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="paragraph"><strong>Stabilized</strong></div>
+                <ul>
+                    <li>+20% Value</li>
+                    <li>+15% Weight</li>
+                    <li>-5% Min Cone of Fire Angle</li>
+                    <li>-25% Max Cone of Fire Angle</li>
+                    <li>-15% Recoil while Hip Firing</li>
+                    <li>+25% Shots till Max Recoil</li>
+                    <li>+15% tighter Cone of Fire while in ADS</li>
+                    <li>-10% Durability</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="paragraph"><strong>Aligned</strong></div>
+                <ul>
+                    <li>+20% Value</li>
+                    <li>+15% Weight</li>
+                    <li>+10 AccuracyBonus</li>
+                    <li>-10% AP Cost</li>
+                    <li>-10% Durability</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <li>Adjusted some weapon mods to be more consistent in how they change weapon durability.</li>
     <li>Fixed an unintended interaction with Plasma Gun Pulse Capacitors and Flamer Barrels.</li>
     <li>Fixed some inconsistent applications of semi-auto -&gt; auto mod damage adjustments on Plasma Flamer mods.</li>
     <li>Adjusted the Brotherhood Recon Rifle to have slightly higher damage, but higher AP cost, higher recoil, higher weight, and lower durability.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: +35% Additive Damage, +10% AP cost, +10% Min and Max Recoil, +25% weight, -7.5% durability</div>
     <li>Fixed an issue where the Crossbow Prime Frame had much longer range than intended.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: It increased range by +100%</div>
     <li>Fixed an issue where Ultracite Laser Gun Sniper barrel mods would deal less damage than intended when fully charged.</li>
     <li>Fixed incorrect VFX on the V63 Laser Carbine when using the Explosive legendary mod</li>
 </ul>
@@ -618,9 +692,6 @@
 <div class="paragraph">As a general reminder, if you see something in the PTS that we don't specifically call out it's safe to assume that the content is not planned for the update that we're currently testing. </div>
 <div class="paragraph">For the dwellers who dream of a C.A.M.P. of their own. A space that allows them to unabashedly express their identity. Those who leave their resources unlocked just in case there’s a dry-mouthed wanderer who needs a sip of water. Also, for those who enjoy creating extremely extravagant mazes, museums, and bringing the arts to Appalachia. We see you and we hope that this update allows you to further scratch that creative itch in your mind.</div>
 <div class="paragraph">The C.A.M.P. building experience changes with this update. Relaxed Build Rules give you more freedom to build the way you want to build. We have also been testing out a new UI for the Workshop experience to make it easier than ever to find and keep track of the items you want. </div>
-<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">How to Participate in the PTS</div>
-<div class="paragraph">All players who own a copy of Fallout 76 on Steam can participate in our PTS. Please note that progress from the PTS does not carry over into the live game. The Atomic Shop is also disabled during this testing period. </div>
-<div class="paragraph">To install the PTS, open your Steam library, and install “Fallout 76 Public Test Server”. </div>
 <div class="update bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Relaxed Build Rules</div>
 <div class="paragraph">Relaxed Build Rules are activated for Adventure Mode. Unleash your creativity by letting your C.A.M.P. items float, intersect with each other, or be unsupported! </div>
 <div class="paragraph">Let’s go over some of the most common scenarios you’ll experience when building a C.A.M.P. and talk about how these new build rules will affect them.</div>
@@ -1079,6 +1150,7 @@
     <li>Explosion VFX from the Explosive Legendary mod and Ultracite Laser weapons and the V63 Laser Carbine now match the weapon’s projectile color.</li>
     <li>Reduced the frequency of Grenades, Mines, and Explosive Weapon Ammo in containers and enemy loot.</li>
     <li>Increased the crafting cost of Nuka and Nuka-Quantum Grenades</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Crafting costs increased by 1 Lead, 2 Nuclear Material, and 1 Screw</div>
 </ul>
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle42  heading_md article-el-h3">Weapon Base Damage</div>
 <ul>
@@ -1792,7 +1864,7 @@
                 <li>+15% AimModelRecoilDiminishSightsMult</li>
                 <li>-25% Shots till Max Recoil</li>
                 <li>+15% tighter Cone of Fire while in ADS</li>
-                <li>-5% durability</li>
+                <li>-5% Durability</li>
             </ul>
         </div>
         <div class="column">
@@ -1805,7 +1877,7 @@
                 <li>-15% Recoil while Hip Firing</li>
                 <li>+25% Shots till Max Recoil</li>
                 <li>+15% tighter Cone of Fire while in ADS</li>
-                <li>-10% durability</li>
+                <li>-10% Durability</li>
             </ul>
         </div>
     </div>
@@ -2901,47 +2973,33 @@
 <ul>
     <li>Help entries are now sorted alphabetically in all languages</li>
     <li>Help menu entry for Impairments added</li>
+    <div class="miner-note"><strong>Miner Note</strong>:
+        <div class="paragraph">An impairment is a negative status effect that can be applied to a target through weapons, Perks, and gameplay.</div>
+        <div class="paragraph">Damage over time impairments</div>
+        <div class="paragraph">- Burning</div>
+        <div class="paragraph">- Poison</div>
+        <div class="paragraph">- Bleeding</div>
+        <div class="paragraph">Other impairments</div>
+        <div class="paragraph">- Crippled</div>
+    </div>
 </ul>
 <div class="update article-el-h3">Misc Changes</div>
 <div class="paragraph">
-    <ul>
-        <li>Samuel now sells plans for the Slime Cake and Critter Cooker. Ally Rep is required to purchase them. Both plans cost 4000 bullion each. (Datamined by Blobby)</li>
-        <li>Critter Cooker drop rates adjusted (Datamined by Blobby)
-            <ul>
-                <li>Awesome opossum bacon: 4% -> 4%</li>
-                <li>Iguana on a stick 0.96% -> 9.6%</li>
-                <li>Grilled radtoad: 0.951% -> 13.8%</li>
-                <li>Squirrel on a stick: 28.2% -> 21.8%</li>
-                <li>Seasoned rabbit skewers: 0.659% -> 25.4%</li>
-                <li>Grilled radroach: 65.2% -> 25.4%</li>
-            </ul>
-        </li>
-        <li>Bomb Scientist bugfix (Datamined by Mapex)
-            <ul>
-                <li>Should drain Glow on every throw, once per throw (from last week)</li>
-                <li>Should only drain Glow when thoriwng a grenade specifically, not a knife</li>
-                <li>Should only boost explosive damage of thrown grenades, not launcher weapons or explosive/gauss weapons</li>
-            </ul>
-        </li>
-        <li>Radioactive Strength no longer works on auto-melee weapons</li>
-        <li>Dross Toss rewards Mr Fuzzy tokens again</li>
-        <li>United Ordeal no longer buffs humans when shared by a ghoul</li>
-        <li><a href="https://fallout.fandom.com/wiki/Murry" target="_blank">Murry</a> at the Trading Post no longer sells Toxic Water</li>
-    </ul>
+    TODO
 </div>
 
 <div class="article-el-h3">DSJ's PTS ATX/SCORE Datamines</div>
 <div class="paragraph">Datamined storefronts for upcoming Scoreboard and Atomic Shop Content:
-    <ul>
-        <li><a href="https://imgur.com/a/patch-52-atx-datamine-outlaws-event-PV9B19x" target="_blank">Patch 52 ATX Datamine + Outlaws Event</a></li>
+    <ul>TODO
+        <!-- <li><a href="https://imgur.com/a/patch-52-atx-datamine-outlaws-event-PV9B19x" target="_blank">Patch 52 ATX Datamine + Outlaws Event</a></li>
         <li><a href="https://imgur.com/a/bdtH4ow" target="_blank">Patch 60 ATX Datamine</a></li>
         <li><a href="https://imgur.com/a/9w7w7O5" target="_blank">Patch 60 SCORE Datamine</a></li>
         <li><a href="https://imgur.com/a/kIcV0eu" target="_blank">4/11 Patch 60 PTS Update ATX Datamine</a></li>
-        <li><a href="https://imgur.com/a/UANfvog" target="_blank">4/11 Patch 60 PTS Update SCORE Datamine</a></li>
+        <li><a href="https://imgur.com/a/UANfvog" target="_blank">4/11 Patch 60 PTS Update SCORE Datamine</a></li> -->
     </ul>
 </div>
 
-<div class="article-el-h3">Season 21's Unique Weapon: Ice Breaker</div>
+<!-- <div class="article-el-h3">Season 21's Unique Weapon: Ice Breaker</div>
 <div class="paragraph">This unique harpoon gun has the following features at level 50:
     <ul>
         <li>147 <i class="fa fa-crosshairs"></i> Physical / 147 <i class="fa fa-snowflake-o"></i> Cryo damage</li>
@@ -2968,49 +3026,7 @@
             <img src="score_s21_weapons_harpoongun_icebreaker_c2.jpg" width="10%">
         </a>
     </div>
-</div>
-
-<div class="article-el-h3">Upcoming Challenge Event: Appalachian Outlaws</div>
-<div class="paragraph">See the linked article for more details:
-    <ul>
-        <li><a href="https://nukaknights.com/articles/appalachian-outlaws-challenge-event-all-rewards.html" target="_blank">Appalachian Outlaws Challenge Event: All Rewards</a></li>
-    </ul>
-</div>
-
-<div class="article-el-h3">Cannery Update</div>
-<div class="paragraph">Set to be released with season 21, there have been a few changes since the last PTS.
-    <ul>
-        <li>Clean Cans are now crafted directly instead of cleaning cans you find in the world.</li>
-        <ul>
-            <li>One Clean Can costs 2x Aluminum, 2x Antiseptic, 3x Copper, 3x Steel</li>
-        </ul>
-        <li>Currently, only the following foods are cannable</li>
-        <ul>
-            <li>Megasloth Mushroom Soup</li>
-            <li>Sweet Tato Stew</li>
-            <li>Corn Soup</li>
-            <li>Gourd Soup</li>
-            <li>Glowing Fungus Soup</li>
-            <li>Radscorpion Steak</li>
-            <li>Vegetable Medley Soup</li>
-            <li>Stingwing Stew</li>
-            <li>Gut Shroom Soup</li>
-            <li>Glowing Fungus Puree</li>
-            <li>Tasty Squirrel Stew</li>
-            <li>Awesome Opossum Bacon</li>
-            <li>Poached Angler</li>
-            <li>Swamp Tofu Soup</li>
-            <li>Mirelurk Queen Steak</li>
-            <li>Aged Mirelurk Queen Steak</li>
-            <li>Ribeye Steak</li>
-            <li>Fish Chower</li>
-            <li>Grilled Fish</li>
-        </ul>
-        <li>For last PTS's cannery datamine, see the linked article:</li>
-        <li><a href="https://nukaknights.com/articles/pts-datamining-new-workbench-cannery-.html" target="_blank">PTS
-                Datamining: New Workbench "Cannery"</a></li>
-    </ul>
-</div>
+</div> -->
 
 <a href="https://discord.gg/fo76datamining" style="color: inherit; text-decoration: none" target="_blank">
     <div class="footer bar">
