@@ -35,7 +35,7 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 var updateHrs = document.getElementsByClassName("hr-sect");
-const updateDates = ["Undocumented Changes and Datamined Info","6/27 Notes","7/3 Notes","7/11 Notes","7/18 Notes","7/25 Notes","7/31 Notes","8/1 Notes"];
+const updateDates = ["Undocumented Changes and Datamined Info","6/27 Notes","7/3 Notes","7/11 Notes","7/18 Notes","7/25 Notes","7/31 Notes","8/1 Notes","8/8 Notes"];
 for (let i = 0; i < updateHrs.length; i++) {
   updateHrs[i].innerHTML = updateDates[updateDates.length - 1 - i];
 }

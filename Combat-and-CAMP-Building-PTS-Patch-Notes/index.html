@@ -11,8 +11,35 @@
                 feedback</a></div>
     </div>
 </div>
-<div id="collapsebuttondiv"><button class="collapsebutton article-el-h5" onclick="toggleSections()">Expand all</button>
-</div>
+<div id="collapsebuttondiv"><button class="collapsebutton article-el-h5" onclick="toggleSections()">Expand all</button></div>
+<div class="update bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Combat</div>
+<ul>
+    <li>Fixed an issue where the unique Broadsider, Grand Finale, did not have the same damage as a standard Broadsider.</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">PTS Locker Update</div>
+<div class="paragraph">Your favorite storage facility has been filled with some new toys! We have added the Plan rewards from Mischief Night to the locker so that you can have the chance to craft and test them out if you would like. </div>
+<div class="paragraph">Please let us know if you run into any issues with these rewards. </div>
+<ul>
+    <li>Bat Plushie</li>
+    <li>Bat Plushie Backpack</li>
+    <li>Cauldron Hot Tub</li>
+    <li>Crooked Metal Fences</li>
+    <li>Deathclaw Gargoyle Statue</li>
+    <li>Large Deathclaw Gargoyle Statue</li>
+    <li>Jack-O'-Lantern Backpack Flair</li>
+    <li>Jack-in-the-box Backpack</li>
+    <li>Scorpion Plushie Backpack</li>
+    <li>Hay Bale Throne</li>
+    <li>Spooky Scarecrow Outfit</li>
+    <li>Spooky Scarecrow Headpiece</li>
+    <li>Scorpion Plushie</li>
+    <li>Skeletal Weapon Rack</li>
+    <li>Boney Arm Sconce</li>
+</ul>
+<div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Workshop</div>
+<ul>
+    <li>Various Fixes and improvements</li>
+</ul>
 <div class="update bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">C.A.M.P.</div>
 <ul>
     <li>Fixed a bug where players were unable to put items back in Aid Box after removing them.</li>
@@ -33,7 +60,7 @@
                 </ul>
             </div>
             <li>Peppered adds Limb Damage.</li>
-                <div class="miner-note"><strong>Miner Note</strong>: Mod effects
+            <div class="miner-note"><strong>Miner Note</strong>: Mod effects
                 <ul>
                     <li>+20% Value</li>
                     <li>+15% Weight</li>
@@ -48,6 +75,7 @@
 <div class="bnetArticle-bnetArticle38 bnetArticle-bnetArticle41  heading_md article-el-h3">Perks</div>
 <ul>
     <li>Rad Sponge point cost was increased to 2.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: Also reduced to one rank</div>
     <li>Fixed an issue with Grim Reapers Spring that caused it to not work on every kill.</li>
     <li>Fixed an issue with Kneecapper and Heavy Hitter's that caused them to not operate as they were described.</li>
     <div class="miner-note"><strong>Miner Note</strong>: The "Blunt" weapon requirement was not removed in the 7/25 patch as-advertised</div>
@@ -89,9 +117,16 @@
         <ul>
             <li>Super mutants are still highly resistant to Poison damage.</li>
         </ul>
+        <div class="miner-note"><strong>Miner Note</strong>: Adjusted resists relative to live<br />
+            <div class="gallery">
+                <a target="_blank" href="Robobrain_Poison_Resist_Curves.png">
+                    <img src="Robobrain_Poison_Resist_Curves.png" width="10%">
+                </a>
+            </div>
+        </div>
     </li>
     <li>Adjusted Super Mutant resistances.</li>
-    <div class="miner-note"><strong>Miner Note</strong>: Adjusted resists relative to live
+    <div class="miner-note"><strong>Miner Note</strong>: Adjusted resists relative to live<br />
         <div class="gallery">
             <a target="_blank" href="Super_Mutants_Resist_Curves.png">
                 <img src="Super_Mutants_Resist_Curves.png" width="10%">
@@ -142,9 +177,9 @@
     <li>Fixed an issue where the Gamma Gun Deep Dish mod projectile didn't deal Radiation damage.</li>
     <li>Addressed some inconsistencies with how Pipe Syringer mods changed the weapon's range.</li>
     <li>Increased the speed of the Plasma Caster projectile by 30%.</li>
-    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 10000 to 13000</div>
+    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 10000 to 13000<br />For reference, the railway rifle has a projectile speed of 8000</div>
     <li>Increased the speed of the Alien Disintegrator High-Powered Receiver projectile by 100%.</li>
-    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 4000 to 8000</div>
+    <div class="miner-note"><strong>Miner Note</strong>: Speed increased from 4000 to 8000<br />For reference, the railway rifle has a projectile speed of 8000</div>
     <li>Re-implemented fix for Crossbow Prime Receiver range.</li>
     <li>Fixed a missing damage increase for the Flamer (32 -&gt; 42).</li>
     <li>Fixed an issue with Laser Splitter mods where they increased damage more than intended.</li>
@@ -263,6 +298,7 @@
     <li>Meat Mincer
         <ul>
             <li>Changed effect to “Reduce incoming stagger by 25%.”</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Previous was "Bladed melee weapons gain +20% swing speed."</div>
         </ul>
     </li>
     <li>Bullet Storm
@@ -282,11 +318,26 @@
     <li>Tank Killer
         <ul>
             <li>Reduced to two ranks. Removed the stagger effect and now works with all ranged weapons.</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Effects are as follows
+                <ul>
+                    <li>Rank 1: Your ranged weapons ignore 20% armor</li>
+                    <li>Rank 2: Your ranged weapons ignore 40% armor</li>
+                </ul>
+                (Includes bows)
+            </div>
         </ul>
     </li>
     <li>Stabilized
         <ul>
-            <li>Changed effect to “Big guns gain 30% accuracy. Double in Power Armor.”</li>
+            <li><span class="miner-highlight">Reduced to one rank.</span> Changed effect to “Big guns gain 30% accuracy <span class="miner-highlight">30% smaller Cone of Fire</span>. Double in Power Armor.”</li>
+            <div class="miner-note"><strong>Miner Note</strong>: Previous effects
+                <ul>
+                    <li>Rank 1: In Power Armor, heavy guns gain more accuracy (25% smaller Cone of Fire) and ignore 15% armor.</li>
+                    <li>Rank 2: In Power Armor, heavy guns gain even more accuracy (30% smaller Cone of Fire) and ignore 30% armor.</li>
+                    <li>Rank 3: In Power Armor, heavy guns gain excellent accuracy (45% smaller Cone of Fire) and ignore 45% armor.</li>
+                </ul>
+                (Includes bows)
+            </div>
         </ul>
     </li>
     <li>Homebody
@@ -307,7 +358,7 @@
     <li>Grim Reapers Sprint
         <ul>
             <li>Now a single rank that scales with luck. The effect now always restores AP on kill in VATS. The amount restored is based on your Luck and Max AP.</li>
-            <div class="miner-note"><strong>Miner Note</strong>: Restores 6/14/20/36 AP at 1/15/30/60/100 Luck</div>
+            <div class="miner-note"><strong>Miner Note</strong>: Restores 6/14/20/30/36 AP at 1/15/30/60/100 Luck</div>
         </ul>
     </li>
     <li>Lockpick and Hacking perks have had the Expert and Master prefix moved to be a suffix so that they sort next to each other alphabetically.</li>
@@ -394,6 +445,7 @@
 <ul>
     <li>Fixed a few cases of thrown weapons not scaling with player level.</li>
     <li>Pain Train once-again scales its damage with player level.</li>
+    <div class="miner-note"><strong>Miner Note</strong>: 103 base damage at level 50</div>
     <li>Adjusted the Hat Trick perk to deal 70% damage per bounce instead of 80%.</li>
     <li>Adjusted the Concentrated Fire perk to increase VATS hit chance for non-automatic weapons by 4/8/12% per shot (automatic is still 1/2/3%).</li>
     <li>Changed the V63 Laser Carbine's AP cost back to 30 instead of 40.</li>
@@ -2990,40 +3042,56 @@
 
 <div class="article-el-h3">DSJ's PTS ATX/SCORE Datamines</div>
 <div class="paragraph">Datamined storefronts for upcoming Scoreboard and Atomic Shop Content:
-    <ul>TODO
-        <!-- <li><a href="https://imgur.com/a/patch-52-atx-datamine-outlaws-event-PV9B19x" target="_blank">Patch 52 ATX Datamine + Outlaws Event</a></li>
-        <li><a href="https://imgur.com/a/bdtH4ow" target="_blank">Patch 60 ATX Datamine</a></li>
-        <li><a href="https://imgur.com/a/9w7w7O5" target="_blank">Patch 60 SCORE Datamine</a></li>
-        <li><a href="https://imgur.com/a/kIcV0eu" target="_blank">4/11 Patch 60 PTS Update ATX Datamine</a></li>
-        <li><a href="https://imgur.com/a/UANfvog" target="_blank">4/11 Patch 60 PTS Update SCORE Datamine</a></li> -->
+    <ul>
+        <li><a href="https://imgur.com/a/KUyxEbb" target="_blank">Patch 62 July 11th Update, Season 22 Datamine</a></li>
+        <li><a href="https://imgur.com/a/uwXuv99" target="_blank">Patch 62 PTS July 18th Update, ATX/Season Datamine</a></li>
     </ul>
 </div>
 
-<!-- <div class="article-el-h3">Season 21's Unique Weapon: Ice Breaker</div>
-<div class="paragraph">This unique harpoon gun has the following features at level 50:
-    <ul>
-        <li>147 <i class="fa fa-crosshairs"></i> Physical / 147 <i class="fa fa-snowflake-o"></i> Cryo damage</li>
-        <li>+30% reload speed</li>
-        <li>Targets are slowed by 30% for 6 seconds on hit</li>
-        <li>Enemies killed with Ice Breaker explode for 25 <i class="fa fa-snowflake-o"></i> Cryo damage and slow enemies by 30%</li>
-        <li>Enemies killed with Ice Breaker leave behind Cryo Hazards that deal 15 <i class="fa fa-snowflake-o"></i> Cryo damage per second, slows enemies by 60% for 3 seconds, and last for 12 seconds</li>
-        <li>Bashing enemies slows them by 60% for 12 seconds</li>
-    </ul>
+<!-- <div class="article-el-h3">Season 22's Unique Weapon: Cosmic Knife</div>
+<div class="paragraph">Making a return from Fallout New Vegas's first DLC, Dead Money, the Cosmic Knife has he following stats:
+    <div class="column-container">
+        <div class="column">
+            <div class="paragraph"><strong>Standard</strong></div>
+            <ul>
+                <li>117 <i class="fa fa-crosshairs"></i> base Physical damage</li>
+                <li>Swings 65% faster than a combat knife</li>
+                <li>+50% Additive Damage on a Crit</li>
+                <li>+20% Crit Fill</li>
+                <li>+50% Sneak Mult</li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="paragraph"><strong>Super-Heated</strong></div>
+            <ul>
+                <li>83 <i class="fa fa-crosshairs"></i> base Physical and 149 &#x1F525; base Fire damage</li>
+                <li>Swings 65% faster than a combat knife</li>
+                <li>+25% Limb Damage</li>
+                <li>Targets Burn for 42 &#x1F525; Fire/s for 3 seconds</li>
+                <li>Targets Damage Resist is reduced by 15% for 3 seconds</li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="gallery-container">
     <div class="gallery">
-        <a target="_blank" href="score_s21_weapons_harpoongun_icebreaker_l.png">
-            <img src="score_s21_weapons_harpoongun_icebreaker_l.png" width="10%">
+        <a target="_blank" href="Cosmic Knife.png">
+            <img src="Cosmic Knife.png" width="10%">
         </a>
     </div>
     <div class="gallery">
-        <a target="_blank" href="score_s21_weapons_harpoongun_icebreaker_c1.jpg">
-            <img src="score_s21_weapons_harpoongun_icebreaker_c1.jpg" width="10%">
+        <a target="_blank" href="Super Heated Cosmic Knife.png">
+            <img src="Super Heated Cosmic Knife.png" width="10%">
         </a>
     </div>
     <div class="gallery">
-        <a target="_blank" href="score_s21_weapons_harpoongun_icebreaker_c2.jpg">
-            <img src="score_s21_weapons_harpoongun_icebreaker_c2.jpg" width="10%">
+        <a target="_blank" href="score_s22_camp_decor_cosmicknifead_c1.png">
+            <img src="score_s22_camp_decor_cosmicknifead_c1.png" width="10%">
+        </a>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="score_s22_camp_decor_cosmicknifead_c2.png">
+            <img src="score_s22_camp_decor_cosmicknifead_c2.png" width="10%">
         </a>
     </div>
 </div> -->
